@@ -1,6 +1,5 @@
 ---
 title: Installs
-permalink: /installs
 layout: workshop
 ---
 
