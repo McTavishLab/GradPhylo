@@ -1,0 +1,159 @@
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.4
+% see http://writer2latex.sourceforge.net for more info
+\documentclass{article}
+\usepackage{hyperref}
+\makeatletter
+\newcommand\arraybslash{\let\\\@arraycr}
+\makeatother
+\setlength\tabcolsep{1mm}
+\renewcommand\arraystretch{1.3}
+\title{QSB/ES 244 - Phylogenetics}
+\begin{document}
+\maketitle
+Instructor: Emily Jane McTavish
+Office: SE1 284, Email: ejmctavish@ucmerced.edu
+Course website: \url{https://mctavishlab.github.io/GradPhylo}
+and catcourses site
+
+\section*{Introduction and Course Goals:}
+
+This is a graduate course on phylogenetic methods covering theory, statistics and practice.
+We will study the evolutionary models used to construct phylogenies (evolutionary trees), 
+how these phylogenetic estimates may be used to understand evolutionary processes.
+We will focus on Maximum Likelihood and Bayesian approaches to inferring phylogenetic trees.
+We will develop our computational skills to allow us to use High Performance Computing (HPC) resources to 
+perform phylogenetic analyses.
+The course provides hands-on experience with several important phylogenetic software packages (PAUP*, GARLI, RAxML, RevBayes, BEAST2).
+By the end of the course students should be able to understand much of the primary literature on modern phylogenetic methods and
+know how to apply these methods to their own problems. 
+
+
+\section*{Textbook}
+Paul Lewis, Phylogenetics (Sinuaer) Forthcoming
+
+
+\section*{Learning outcomes}
+
+By the end of this course you will:
+\begin{itemize}
+ \item Understand the theory and statistics underpinning phylogenetic analysis.
+ \item Apply this theory to computational phylogenetic analyses and learn to use remote computing resources (MERCED cluster)
+ \item Assess and discuss primary research papers with a phylogenetic focus
+\end{itemize}
+
+\section*{Assessment}
+\begin{itemize}
+ \item[25\%] Attendance and participation
+ \item[15\%] Paper discussion or research presentation
+ \item[30\%] Lab assignments and homeworks
+ \item[30\%] Final paper
+\end{itemize}
+
+\subsection*{Attendance and participation}
+Come to class and discussion prepared, with assigned readings completed.
+Attend at least 10 out of 15 Friday discussion sections.
+Participate in paper and research discussions
+
+\subsection*{Paper Discussion or Research Presentation}
+Friday meetings can be a great opportunity to get feedback on your ongoing work and practice presentation skills.
+
+You must either sign up to present your ongoing work (can be very informal!), or jointly sign up to present a paper (2 people).
+
+When choosing a paper, select one that is:
+\begin{itemize}
+ \item RECENT - ask permission for papers more than 5 years old (may be totally fine, but need a bit of a reason).
+ \item DATA or METHODS - Not review papers. They don't provide much to discuss. If the value of a paper is taxon specific, then it won't be broadly interesting. (or the taxon has to be REALLY COOL:)
+\end{itemize}
+If you are having trouble selecting a paper, browse through recent issues of Systematic Biology, Molecular Ecology, or Evolution.\\
+Applications papers in other disciplines incorporating phylogeny are welcome!\\
+
+\subsubsection*{Paper presentations}
+\begin{itemize}
+ \item Send out the paper to the Phylogenetics discussion listserve at latest \textbf{before class on Tuesday}.
+ \item Presentations should be 10-20 minutes.
+ \item Focus on the methods and figures.
+ \item Set up questions for discussion.
+\end{itemize}
+
+\subsubsection*{Research presentations}
+\begin{itemize}
+ \item Send out the title to the Phylogenetics discussion listserve at latest \textbf{before class on Tuesday}.
+ \item Presentations should be 20-30 minutes.
+ \item Specify questions or topics you would like advice/comments on.
+\end{itemize}
+
+
+\subsection*{Lab assignments and Homeworks}
+Labs and or homeworks will be assigned most weeks, and will be turned in via the catcourses class site.
+Pacing of the semester will be determined as we go, 
+so a full assignment schedule will not be available in advance.
+The homework assignments should be worked on your own.
+
+\subsection*{Paper}
+A final paper will be due at the the time of the scheduled exam, Dec 11, 2017 at 6:30 pm.
+The term paper will make up 40\% of your grade. The project can consist of a new
+phylogenetic analysis (of your own data or published data) or a paper reviewing a research topic
+in phylogenetic analysis. Please talk to me about your planned project before spending too much
+time so that we can agree that the scope is appropriate.
+
+
+\subsection*{QSB Program Learning Outcomes}
+\begin{itemize}
+ \item  ``Background definitions and motivation of fundamental statistical and modeling concepts in the context of quantitative and statistical challenges that exist for certain topics or approaches.''
+ \item ``Assessments of student understanding of fundamental statistical and modeling concepts and the ability to conceive, plan, execute and/or interpret the applications of these approaches to research questions.''
+ \item ``In-class discussion of primary research papers with major conclusions that depend on quantitative, statistical, or model-dependent approaches.''
+\end{itemize}
+
+
+\subsection*{ES Program Learning outcomes}
+\begin{itemize}
+ \item Learning outcomes 1, 2 and 3, fulfill the ES Core Knowledge program learning outcome ``Graduates will be knowledgeable, skillful and self-directed in the observation and analysis of environmental systems in terms of their capacity to independently identify important research questions, develop experimental plans, analyze data, and formulate conclusions in the context of a doctoral dissertation''
+ \item Learning outcomes 1 and 2 develop applied statistical and computation skills which fulfill the the ES Career Placement and Advancement program learning outcome ``Graduates will find suitable career placement and achieve advancement in government agencies, non-government organizations, private industry, and/or academic teaching and research institutions''
+ \item Learning outcome 3 fulfills the ES ``Communication Skills'' program learning outcome. ``Graduates will be conversant in at least two areas of environmental systems, and be adept at oral, written and visual communication of research results to peers and non-technical decision makers''
+\end{itemize}
+
+
+\section*{Course Policies}
+\begin{itemize}
+ \item[1.] Classroom interaction. I encourage personal views and critical inquiry based on the material and topics at hand. Equally, I expect that the viewpoints of others will be respected. Consider this course to be valuable practice to engage with your peers through professional communication and scholarly discourse. 
+ \item[2.] Special accommodations. Students who need special accommodations are required to submit the form to me in person, preferably outside of class (e.g. office hours) within the first two weeks of the quarter. If you will be requesting academic accommodations, you must first contact the Disability Services (http://disabilityservices.ucmerced.edu/) to make arrangements.
+\item[3.] Academic integrity. The University has established codes concerning proper academic conduct and the consequences resulting from improper behavior. 
+Please be aware of these policies. The official UC Conduct Standards can be found at: http://studentlife.ucmerced.edu/content/uc-conduct-standards
+\item[4.] Life as a UC-Merced Student. Your course facilitators are aware of the many pressures we all face. There are many campus services specifically suited to help you throughout your university career, please take advantage of your resources, including: University academic advising (http://advising.ucmerced.edu/), Health Services (http://health.ucmerced.edu/), and University Counseling and Psychological Services (http://counseling.ucmerced.edu/).
+\end{itemize}
+
+\section*{Topics}
+It is very likely that we will run out of time, and not be able to cover all of these topics; so
+please, speak up and give me some feedback about what topics are most important to you!\\
+
+Intro, Statistical inference, tree terminology
+Compatibility/Parsimony
+Distance-based tree estimation
+Distance methods/Searching
+Models and Model selection
+Maximum likelihood
+Rate heterogeneity
+Consistency
+Topology testing
+Branch Support
+Bayesian Phylogenetics
+Ancestral character state reconstruction
+Comparative methods
+Divergence time estimation
+Multiple Sequence Alignment
+Coalescent
+Gene tree/species tree analyses
+
+
+
+\subsection*{Additional Resources:}
+Bininda-Emonds, Olaf R.P. (Ed.) 2004. Phylogenetic supertrees - Combining information to reveal the Tree of Life Series: Computational Biology , Vol. 4. Springer.ISBN: 978-1-4020-2329-3 - QH367.5 .P475 2004\\
+Felsenstein, J. (2004) Inferring Phylogenies. Sinauer, Sunderland. Product Code: 0-87893-177-5 - QH83 .F45 2004\\
+Hall, B.J. (2004) Phylogenetic trees made easy: a how-to manual 2nd ed. Sinauer, Sunderland. Product Code: 0-87893-312-3 - QH367.5 .H27 2004\\
+Hennig, W. et al. (1999) Phylogenetic Systematics. University of Illinois Press.ISBN 0-252-06814-9. \ {}- QL351 .H413 1979\\\
+Hillis DM, Moritz C, Mable BK, Graur D. Molecular systematics. Sinauer Associates Sunderland, MA; 1996 ]{Hillis DM, Moritz C, Mable BK, Graur D. Molecular systematics. Sinauer Associates Sunderland, MA; 1996\\
+Page, R.D.M., editor (2002)Tangled Trees: Phylogeny, Cospeciation, and Coevolution.University of Chicago Press.ISBN: 978-0-226-64467-7 (ISBN-10: 0-226-64467-7) - QH367.5 .T36 2003\\
+Scotland, R. \&R.T. Pennington (2000) Homology and Systematics: Coding Characters for Phylogenetic Analysis. Systematics Association Special Volumes Volume: 58. ISBN: 9780748409204 - QH367.5 .H65 2000\\
+Semple, C. Steele, M.A. PhylogeneticsOxford ; New York : Oxford University Press, 2003.\\
+Steel M. Phylogeny: Discrete and random processes in evolution . SIAM; 2016 \\
+\end{document}
