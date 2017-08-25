@@ -1,3 +1,8 @@
+---
+title: README
+---
+
+
 # Graduate Phylogenetics - Fall 2017
 
 ## University of California, Merced -- QSB/ES 244
