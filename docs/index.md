@@ -9,7 +9,7 @@ layout: minimal
 ## University of California, Merced -- QSB/ES 244
 
 A graduate course covering phylogenetic methods: theory, statistics and practice.  
-[https://github.com/McTavishLab/GradPhylo/raw/master/docs/QSB_ES_244_syllabus_Aug_25.pdf](Syllabus)
+[Syllabus](https://github.com/McTavishLab/GradPhylo/raw/master/docs/QSB_ES_244_syllabus_Aug_25.pdf)
 
 **Instructor:**  [Emily Jane McTavish](http://McTavishLab.github.io/)
 
