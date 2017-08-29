@@ -20,12 +20,9 @@ Lecture/Lab is registered students only, everyone is welcome at discussion.
 
 Please complete setup instructions listed at [https://mctavishlab.github.io/GradPhylo/installs](https://mctavishlab.github.io/GradPhylo/installs)
 
-[Intro slides](https://github.com/McTavishLab/GradPhylo/raw/master/docs/slides/intro_phylo.pdf)
-
-[HW Week 1 (29 Aug)](https://github.com/McTavishLab/GradPhylo/raw/master/docs/assignments/Week1)
-
-[Week 1 slides](https://github.com/McTavishLab/GradPhylo/raw/master/docs/slides/tree_terms_applications.pdf)
-
+[Intro slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_phylo.pdf)    
+[HW Week 1 (29 Aug)](https://github.com/McTavishLab/GradPhylo/raw/master/docs/assignments/Week1)    
+[Week 1 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/tree_terms_applications.pdf) Tree terminology and applications    
 [HW Week 2 (Sept 5)](https://github.com/McTavishLab/GradPhylo/raw/master/docs/assignments/Week2)
 
 ---
