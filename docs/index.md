@@ -24,8 +24,9 @@ Please complete setup instructions listed at [https://mctavishlab.github.io/Grad
 [HW Week 1 (29 Aug)](https://github.com/McTavishLab/GradPhylo/raw/master/docs/assignments/Week1)    
 [Week 1 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/tree_terms_applications.pdf) Tree terminology and applications    
 [HW Week 2 (Sept 5)](https://github.com/McTavishLab/GradPhylo/raw/master/docs/assignments/Week2)  
-[Discussion paper Sept 1](https://github.com/McTavishLab/GradPhylo/raw/master/docs/discussion/Zhang2016.pdf) Zhang et al. 2016 
-   
+[Discussion paper Sept 1](https://github.com/McTavishLab/GradPhylo/raw/master/docs/discussion/Zhang2016.pdf) Zhang et al. 2016 Genome-wide introgression among distantly related Heliconius butterfly species
+
+
 
 ---
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
