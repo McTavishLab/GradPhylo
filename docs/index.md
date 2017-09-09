@@ -27,7 +27,7 @@ Please complete setup instructions listed at [https://mctavishlab.github.io/Grad
 [Discussion paper Sept 1](https://github.com/McTavishLab/GradPhylo/raw/master/docs/discussion/Zhang2016.pdf) Zhang et al. 2016 Genome-wide introgression among distantly related Heliconius butterfly species    
 [Week 2 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/inference.pdf) Inference  
 [Discussion paper Sept 8](https://github.com/McTavishLab/GradPhylo/raw/master/docs/discussion/Molecular_data_in_conjunction_with_morph.pdf)   
-[Merced Cluster](https://github.com/McTavishLab/GradPhylo/raw/master/docs/slides/Merced_Cluster_basics.pptx)  
+[Merced Cluster slides](https://github.com/McTavishLab/GradPhylo/raw/master/docs/slides/Merced_Cluster_Basics.pptx)  
 
 ---
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
