@@ -1,0 +1,999 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>BIOL 848: Phylogenetic Methods</title> 
+    <link href="PAUP_lab_files/BIOL848.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" border="0" width="972" height="160">
+<!--DWLayoutTable-->
+    <tbody><tr>
+        <td colspan="2" valign="top" height="49">
+            <p>
+                <span class="pagetitle">QSB 244: Phylogenetics</span><span class="pagetitle"></span>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td width="247" valign="bottom" height="109">
+                <span class="rowhead">Instructor:</span> <a href="mailto:mtholder@ku.edu">Mark Holder</a>
+                <br>
+        </td>
+    </tr>
+</tbody></table>
+<!-- InstanceBeginEditable name="MainDiv" -->
+<div class="editable">
+    <p>
+        This lab was written by Paul O. Lewis and has been modified by Mark Holder and then by Emily Jane McTavish
+original lab is <a href="http://hydrodictyon.eeb.uconn.edu/people/plewis/courses/phylogenetics/labs/paupnexus.html">here</a>). Thanks, Paul and Mark!
+    </p>
+    <h1>Lab 2: Introduction to PAUP* and the NEXUS data file format</h1> <h2>Contents</h2> 
+    <ul>
+        <li>
+            <a href="#paupintro">Introduction to PAUP* 4.0</a> 
+            <ul>
+                <li>
+                    <a href="#pauphomepage">PAUP* Home Page</a>
+                </li>
+                <li>
+                    <a href="#paupcando">What can PAUP* do?</a>
+                </li>
+                <li>
+                    <a href="#paupnotdo">What can PAUP* <i>not</i> do?</a>
+                </li>
+                <li>
+                    <a href="#conventions">Typographical conventions</a>
+                </li>
+                <li>
+                    <a href="#pauptips">PAUP* tips</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#NEXUSfileformat">The NEXUS Data File Format</a> 
+            <ul>
+                <li>
+                    <a href="#NEXUSblocks">NEXUS blocks</a>
+                </li>
+                <li>
+                    <a href="#NEXUScommands">NEXUS commands</a>
+                </li>
+                <li>
+                    <a href="#NEXUScomments">NEXUS comments</a>
+                </li>
+                <li>
+                    <a href="#commonblocks">Commonly-used NEXUS blocks</a> 
+                    <ul>
+                        <li>
+                            <a href="#taxablock">Taxa block</a>
+                        </li>
+                        <li>
+                            <a href="#datablock">Data block</a>
+                        </li>
+                        <li>
+                            <a href="#treesblock">Trees block</a>
+                        </li>
+                        <li>
+                            <a href="#setsblock">Sets block</a>
+                        </li>
+                        <li>
+                            <a href="#assumptionsblock">Assumptions block</a>
+                        </li>
+                        <li>
+                            <a href="#paupblock">Paup block</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#paupfortoday">Today's PAUP* lab exercise</a>
+        </li>
+        <li>
+            <a href="#mesquite">Mesquite</a>
+        </li>
+    </ul>
+    <h1><a name="paupintro"></a>Introduction to PAUP* 4.0</h1> PAUP* 4.0 is the successor to PAUP 3.1, which was published in 1993 by David L. Swofford (currently at the Duke University's <a href="http://www.genome.duke.edu/">Institute for Genome Sciences and Policy</a> and <a href="http://www.nescent.org/">NESCent</a>). The name PAUP means <span class="makeconspicuous">P</span>hyogenetic <span class="makeconspicuous">A</span>nalysis <span class="makeconspicuous">U</span>sing <span class="makeconspicuous">P</span>arsimony because parsimony was the only optimality criterion employed at the time. The asterisk in the name PAUP* means <i>and other methods</i>.
+ PAUP* is one of the most comprehensive phylogenetic analysis computer 
+programs available, and we will use PAUP to illustrate many of the 
+phylogenetic methods we talk about during the course. <h2><a name="pauphomepage"></a>PAUP* Home Page</h2> The <a href="http://paup.csit.fsu.edu/">PAUP* Home Page</a>
+ is the best place to go for up-to-date information about program 
+availability, known problems/workarounds, and help in the form of a FAQ 
+and electronic forum. As of this writing, PAUP* is being sold by <a href="http://www.sinauer.com/detail.php?id=8060">Sinauer Associates</a>
+ (price varies according to platform). While it is not a free program, 
+you really do get a lot for your money compared to most other commercial
+ software, as the next section is designed to illustrate. <h2><a name="paupcando"></a>What can PAUP* do?</h2>
+ PAUP* is capable of performing many of the types of phylogenetic 
+analyses The following listing is not exhaustive, but is designed to 
+give you an idea of what PAUP* can currently do (we'll cover most of 
+these methods later in class): 
+    <ul>
+        <li>
+            <span class="newterm"> Algorithmic searching:</span> Exhaustive, Branch-and-bound, Stepwise Addition, Neighbor-joining, Puzzling, UPGMA, Star Decomposition 
+        </li>
+        <li>
+            <span class="newterm"> Heuristic searching:</span> Nearest-neighbor Interchange (NNI), Subtree Pruning/Regrafting (SPR), Tree Bisection/Reconnection (TBR) 
+        </li>
+        <li>
+            <span class="newterm"> Optimality criteria:</span> parsimony, maximum likelihood, minimum-evolution, least-squares 
+        </li>
+        <li>
+            <span class="newterm"> Parsimony variants:</span> Camin-Sokal, Wagner, Fitch, transversion, generalized (=weighted) 
+        </li>
+        <li>
+            <span class="newterm"> Substitution models:</span> JC69, F81, K80, F84, HKY85, GTR, logdet/paralinear 
+        </li>
+        <li>
+            <span class="newterm"> Descriptive statistics:</span> base frequencies, pairwise sequence comparisons 
+        </li>
+        <li>
+            <span class="newterm"> Manipulating data scope:</span> include/exclude characters, delete/restore taxa, partitions (characters and taxa) 
+        </li>
+        <li>
+            <span class="newterm"> Statistical tests:</span> KH test, 
+homogeneity partition test, permutation tests, base frequency 
+homogeneity test, likelihood ratio test of molecular clock 
+        </li>
+        <li>
+            <span class="newterm"> Nodal support measures:</span> jackknife, bootstrap 
+        </li>
+        <li>
+            <span class="newterm"> Consensus methods:</span> strict/semistrict/majority-rule/Adams consensus trees, agreement subtrees 
+        </li>
+        <li>
+            <span class="newterm"> Trees:</span> generation of random trees, tree-to-tree distances 
+        </li>
+        <li>
+            <span class="newterm"> Other:</span> Lake's invariants, plots of gamma distribution, likelihood surface check, ancestral state reconstruction, printing of trees 
+        </li>
+    </ul>
+    <h2><a name="paupnotdo"></a>What can PAUP* <i>not</i> do?</h2> Despite its completeness, there are a few things that PAUP* cannot do for you at the present time: 
+    <ul>
+        <li>
+            PAUP* does not allow tree editing (like Mesquite, <a href="http://phylogeny.arizona.edu/macclade/macclade.html">MacClade</a>, or <a href="http://taxonomy.zoology.gla.ac.uk/rod/treeview.html">TreeView</a>) 
+        </li>
+        <li>
+            PAUP* is not able to do maximum likelihood analyses on amino acid sequences 
+        </li>
+        <li>
+            PAUP* does not provide codon models that allow you to take 
+into account the codon structure of protein coding genes when analyzing 
+nucleotide sequences (use <a href="http://abacus.gene.ucl.ac.uk/software/paml.html">PAML</a> or <a href="http://www.hyphy.org/">HyPhy</a> for this) 
+        </li>
+        <li>
+            PAUP* does not perform Bayesian analyses (we will use <a href="http://mrbayes.csit.fsu.edu/">MrBayes</a> later on for this) 
+        </li>
+        <li>
+            PAUP* (like almost all other phylogenetic analysis programs)
+ assumes your sequences are already aligned; it will not align them for 
+you, nor will it help you find sequences in GenBank or other databases. 
+        </li>
+    </ul>
+    <h2><a name="conventions"></a>Typographical conventions</h2> In this and subsequent web pages, I will try to stick to the following typographical conventions: 
+    <ul>
+        <li>
+            New terms will look like <span class="newterm">this</span>
+        </li>
+        <li>
+            Text that I want to emphasize will look like <span class="makeconspicuous">this</span>
+        </li>
+        <li>
+            Command names or portions of commands that you might type into a program such as PAUP* will look like <span class="command">this</span>
+        </li>
+        <li>
+            Keywords used in NEXUS files will look like <span class="NEXUS">this</span>
+        </li>
+        <li>
+            Names of files will look like <span class="filename">this</span>
+        </li>
+    </ul>
+    <h2><a name="pauptips"></a>PAUP* tips</h2> PAUP* is not finished at 
+this point. For the most part, this is not a problem since you can 
+purchase and use it just like a finished product. The primary drawback 
+of PAUP*'s unfinished status is that there is currently not a complete 
+manual for the program. On the <a href="http://paup.csit.fsu.edu/downl.html#Anchor-58521">PAUP* Download Page</a>
+ you can find a PDF command summary and "Quick Start" tutorial; however,
+ much of the explanatory portion of the manual is not present in any 
+form. There are easy ways to obtain information from the program itself,
+ however. Some of the tips listed below are concerned with getting the 
+program to tell you what commands and command options are available. 
+    <p>
+        Here are some tips to keep in mind while you use PAUP*. This 
+list is not comprehensive; these are just some things that are not 
+immediately apparent but which make your life easier once you know about
+ them. 
+    </p>
+    <ul>
+        <li>
+            A <span class="makeconspicuous">command line</span> can be 
+made visible on the Mac version, and is always apparent on all other 
+versions of PAUP*. This may not sound like a tip, but having a command 
+line allows you to explore many of the other tips described below. 
+        </li>
+        <li>
+            The <span class="command">help</span> command provides a 
+list of available commands. Often you can spot the command you need by 
+looking at this list. Once you see a command name that looks promising, 
+you can get a description of how to invoke the command like this: 
+            <p>
+                <span class="command">help hsearch;</span>
+            </p>
+        </li>
+        <li>
+            The <span class="command">? option</span> works for all 
+commands and provides a list of the options for that command as well as 
+the current default settings for those options. This is extremely 
+useful! For example, this command would list all the current likelihood 
+settings: 
+            <p>
+                <span class="command">lset ?;</span>
+            </p>
+        </li>
+        <li>
+            All PAUP* <span class="makeconspicuous">menu commands have command line equivalents</span>.
+ In this class we will only use the text commands rather than using 
+graphical versions of PAUP*. There are significant benefits to using the
+ command line interface. For example, you can put all the commands for 
+an analysis in the data file itself (see section on <a href="#paupblock">PAUP block</a>s,
+ below), allowing you to have a complete record of what you did (often 
+very useful when a reviewer asks you to be more specific about how you 
+performed your analysis!). PAUP blocks are also useful for making sure 
+certain settings are always invoked when you execute the data file. 
+Using the text commands (rather that pointing-and-clicking also 
+preserves a record of the commandst that you have issued -- something 
+what you tell a program to do is not what you meant to do, so seeing the
+ record of actions is very useful). 
+        </li>
+        <li>
+            PAUP* uses the <span class="newterm">NEXUS data file format</span>.
+ This is a fairly complex file format used by several programs that 
+perform phylogenetic analyses (PAUP*, MacClade, TreeView, and Component,
+ for example). It is described in more detail below, so here I will only
+ point out that PAUP* can put your data in NEXUS format automatically if
+ your data are in one of several recognized formats already. This is 
+done with the <span class="command">toNEXUS</span> command as follows: 
+            <p>
+                <span class="command">toNEXUS fromfile=mydata.txt format=text tofile=mydata.nex;</span> 
+                <br>
+                <span class="command">toNEXUS fromfile=mydata.msf format=gcg tofile=mydata.nex;</span> 
+                <br>
+                <span class="command">toNEXUS fromfile=mydata.dat format=phylip tofile=mydata.nex;</span>
+            </p>
+            <p>
+                The first of these commands converts a data file (<span class="filename">mydata.txt</span>)
+ in plain text format (each sequence on a separate line, with the name 
+first followed by the sequence after one or more blank spaces) to NEXUS 
+format, storing it in a file named <span class="filename">mydata.nex</span>. The second line converts <span class="filename">mydata.msf</span> (GCG MSF format) into NEXUS format, again storing the resulting file as <span class="filename">mydata.nex</span>. The third line converts a PHYLIP formatted data file (<span class="filename">mydata.dat</span>) to NEXUS format.
+            </p>
+            <p>
+                Use the command <span class="command">toNEXUS ?</span> to list other options, including other formats that can be converted.
+            </p>
+        </li>
+        <li>
+            PAUP* allows you to easily <span class="makeconspicuous">include and exclude sites</span>,
+ making it possible to leave primer sites, introns, and dubiously 
+aligned regions in the data file even though you do not wish to include 
+them in analyses. You can also include or exclude entire classes of 
+sites using the keywords <span class="command">all</span>, <span class="command">gapped</span>, <span class="command">missambig</span>, <span class="command">constant</span>, and <span class="command">uninf</span>. For example, 
+            <p>
+                <span class="command">exclude gapped;</span>
+            </p>
+            <p>
+                would exclude all sites containing a gap for at least 
+one taxon (sequence). If you needed to exclude only 3rd. codon position 
+sites, even this is easy: assuming that the first nucleotide site in 
+each sequence corresponds to a 1st codon position, this command would 
+exclude all the 3rd. position sites (the dot stands for the last 
+nucleotide site in the sequence):
+            </p>
+            <p>
+                <span class="command">exclude 3-. \ 3;</span>
+            </p>
+            <p>
+                This is how you include again all the sites you have excluded:
+            </p>
+            <p>
+                <span class="command">include all;</span>
+            </p>
+        </li>
+        <li>
+            There are parallel commands for <span class="makeconspicuous">deleting and restoring taxa</span>. The term <span class="newterm">taxon</span>
+ (plural taxa) refers to whatever forms the terminal nodes of your 
+phylogeny (the taxa will be individual sequences in most cases for 
+purposes of this course). Don't be confused by the command names <span class="command">delete</span> and <span class="command">restore</span>: these act just like <span class="command">exclude</span> and <span class="command">include</span> except they act on taxa and not characters (=sites). If the first, second and fourth taxa were named <span class="makeconspicuous">Thermus</span>, <span class="makeconspicuous">Sulfolobus</span> and <span class="makeconspicuous">Pyrococcus</span>, you could tell PAUP* to ignore them in subsequent analyses using either of the two commands below: 
+            <p>
+                <span class="command">delete 1 2 4;</span> 
+                <br>
+                <span class="command">delete Thermus Sulfolobus Pyrococcus;</span>
+            </p>
+            <p>
+                This is how you would reinstate the taxa deleted above:
+            </p>
+            <p>
+                <span class="command">restore all;</span>
+            </p>
+        </li>
+        <li>
+            For long runs, PAUP* reports progress once per minute in the
+ form of a line written to the output buffer. To have PAUP* report once 
+every two minutes, specify 120 seconds instead of the default of 60 
+seconds: 
+            <p>
+                <span class="command">set dstatus=120;</span>
+            </p>
+        </li>
+        <li>
+            By default, PAUP* does not save the output that is generated to a file. The output is stored in what is known as an <span class="newterm">output buffer</span>.
+ When this buffer becomes full, the first part will begin to be 
+overwritten by newer output. Thus, one of the first things you should do
+ when starting any serious analysis is to start a <span class="newterm">log file</span>, using either the menu command or a command similar to this: 
+            <br>
+            <br>
+            <span class="command">log file=myoutput.txt start replace</span> 
+            <br>
+            <br>
+            The keyword <span class="command">start</span> means to start logging output, whereas <span class="command">stop</span> means to stop logging output, and the <span class="command">replace</span> keyword causes the file to be overwritten without warning if it exists. Using <span class="command">append</span> instead of <span class="command">replace</span>
+ is safer: in this case, new output is added at the end of the file and 
+none of the data already in the file is lost. If you do not use either <span class="command">replace</span> or <span class="command">append</span>,
+ then PAUP* will ask you what you want to do (ok if you are sitting 
+there watching it, but not so good if you have started a run and walked 
+away from the computer for a long time!). 
+        </li>
+        <li>
+            PAUP* almost always produces <span class="newterm">unrooted trees</span>,
+ however, the trees look rooted when PAUP* draws them! You can reroot 
+the tree by specifying an outgroup taxon (or taxa); however, this does 
+not change the fact that the analysis did not estimate or determine the 
+root (you did this, either implicitly or explicitly). Here's how to tell
+ PAUP* to always draw trees with Giardia as the outgroup: 
+            <p>
+                <span class="command">outgroup Giardia;</span>
+            </p>
+        </li>
+    </ul>
+    <h1><a name="NEXUSfileformat"></a>The NEXUS Data File Format</h1> 
+    <p>
+        <a name="NEXUSblocks"></a>NEXUS blocks
+    </p>
+    PAUP* uses a data file format known as <span class="newterm">NEXUS</span>. This file format is now shared among several programs. NEXUS data files always begin with the characters <span class="NEXUS">#NEXUS</span> but are otherwise organized into major units known as <span class="newterm">blocks</span>. Some blocks are recognized by most of the programs using the NEXUS file format, whereas other blocks are <span class="newterm">private blocks</span> (recognized by only one program). A NEXUS block has the following basic structure: <pre><span class="NEXUS">#NEXUS
+...
+begin characters;
+...
+end;</span></pre> Note that the elipsis (...) is never used in a NEXUS 
+data file; it is used here simply to indicate that some text has been 
+omitted. The name of the NEXUS block used as an example above is <span class="NEXUS">characters</span>.
+ Because NEXUS data files are organized in named blocks, PAUP* and other
+ programs are able to read blocks whose names they recognize and ignore 
+blocks that are not recognized. This allows many different programs to 
+use the same overall format without crashing when they encounter data 
+they cannot interpret. <h2><a name="NEXUScommands"></a>NEXUS commands</h2> Blocks are in turn organized into semicolon-terminated <span class="newterm">commands</span>. <span class="makeconspicuous">It is very important that you remember to terminate all commands with a semicolon.</span>
+ This is especially hard to remember for very long commands. PAUP* is 
+pretty good about pointing out forgotten semicolons, but sometimes it 
+doesn't realize you've left something out until some distance 
+downstream, which can make the problem point difficult to find. Some 
+common commands will be provided below in the description of the common 
+blocks. <h2><a name="NEXUScomments"></a>NEXUS comments</h2> Comments can
+ be placed in a NEXUS file using square brackets. Comments can be placed
+ anywhere, and they are used for many purposes. For example, <span class="makeconspicuous">you can effectively remove some of your data by commenting it out</span>.
+ You can also annotate your sequences using comments. For example, a 
+comment like that below is useful for locating specific sites in your 
+alignment: <pre><span class="NEXUS">
+            [----+--10|----+--20|----+--30|----+--40|----+--50|----]
+Ephedra      TTAAGCCATGCATGTCTAAGTATGAACTAATT-CAAACGGTGAAACTGCGGATG
+Gnetum       TTAAGCCATGCATGTCTATGTACGAACTAATC-AGAACGGTGAAACTGCGGATG
+Welwitschia  TTAAGCCATGCACGTGTAAGTATGAACTAGTC-GAAACGGTGAAACTGCGGATG</span></pre>
+ If you would like your comment printed out in the output when PAUP* 
+executes the data file, just insert an exclamation point (!) as the 
+first character inside the opening left square bracket: <pre><span class="NEXUS">
+[!This is the data file used for my dissertation]</span></pre> <h2><a name="commonblocks"></a>Commonly-used NEXUS blocks</h2> 
+    <p>
+        Here is a list of common NEXUS blocks and the most-common 
+commands within these blocks. For a complete description of the NEXUS 
+file format, take a look at this paper:
+    </p>
+    <center>
+        <table border="5" width="80%">
+            <tbody>
+                <tr>
+                    <td>
+                        Maddison, David R., Swofford, David L. and 
+Maddison, Wayne P. 1997. "NEXUS: an extensible file format for 
+systematic information." <i>Systematic Biology</i> <b>46</b>: 590-621
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    <h3><a name="taxablock"></a>Taxa block</h3> The purpose of a Taxa 
+block is to provide names for your taxa (i.e., sequences). You may not 
+use a Taxa block very often, since you can also supply names for your 
+taxa directly in the Data block (see below). Here is an example of a 
+Taxa block. <pre><span class="NEXUS">#NEXUS
+...
+begin taxa;
+  dimensions ntax=5;
+  taxlabels 
+    Giardia
+    Thermus
+    Deinococcus
+    Sulfolobus
+    Haobacterium
+  ;
+end;</span></pre> Note that there are four <span class="newterm">commands</span> in this example of a Taxa block. Can you find the terminating semicolon for each of them? 
+    <ul>
+        <li>
+            the <span class="NEXUS">begin</span> command giving the block's name
+        </li>
+        <li>
+            the <span class="NEXUS">dimensions</span> command giving the number of taxa
+        </li>
+        <li>
+            the <span class="NEXUS">taxlabels</span> command providing the actual taxon labels
+        </li>
+        <li>
+            the <span class="NEXUS">end</span> command, telling PAUP* that there are no more commands to process for this block
+        </li>
+    </ul>
+    <h4><a name="datablock"></a>Data block</h4> The <span class="NEXUS">Data</span>
+ block is the workhorse of NEXUS blocks. This is where you place the 
+actual sequence data, and, as mentioned above, this can also be where 
+you define the names of your sequences. Here is an example of a <span class="NEXUS">Data</span> block: <pre><span class="NEXUS">#NEXUS
+...
+begin data;
+  dimensions ntax=5 nchar=54;
+  format datatype=dna missing=? gap=-;
+  matrix
+    Ephedra       TTAAGCCATGCATGTCTAAGTATGAACTAATTCCAAACGGTGAAACTGCGGATG
+    Gnetum        TTAAGCCATGCATGTCTATGTACGAACTAATC-AGAACGGTGAAACTGCGGATG
+    Welwitschia   TTAAGCCATGCACGTGTAAGTATGAACTAGTC-GAAACGGTGAAACTGCGGATG
+    Ginkgo        TTAAGCCATGCATGTGTAAGTATGAACTCTTTACAGACTGTGAAACTGCGAATG
+    Pinus         TTAAGCCATGCATGTCTAAGTATGAACTAATTGCAGACTGTGAAACTGCGGATG
+                 [----+--10|----+--20|----+--30|----+--40|----+--50|----]
+  ;
+end;</span></pre> 
+    <p>
+        Some things to note in this example are:
+    </p>
+    <ul>
+        <li>
+            The <span class="NEXUS">dimensions</span> command comes first in a Data block, and specifies the number of sequences (taxa; <span class="NEXUS">ntax</span>) and number of sites (characters; <span class="NEXUS">nchar</span>).
+        </li>
+        <li>
+            The <span class="NEXUS">format</span> command tells PAUP* what kind of data follow (<span class="NEXUS">dna</span>, <span class="NEXUS">rna</span>, <span class="NEXUS">protein</span>, or <span class="NEXUS">standard</span>), and provides the symbols used for missing data (<span class="NEXUS">?</span>) and gaps (<span class="NEXUS">-</span>).
+        </li>
+        <li>
+            The <span class="NEXUS">matrix</span> command dominates the <span class="NEXUS">Data</span> block, providing the sequences themselves (as well as the taxon names). Note the semicolon terminating the <span class="NEXUS">matrix</span> command!!!
+        </li>
+        <li>
+            You can use upper or lower case symbols for nucleotides
+        </li>
+        <li>
+            You can place whitespace anywhere except inside a taxon name or keyword (e.g., <span class="NEXUS">data type = dna</span> would cause problems because <span class="NEXUS">datatype</span> should not have embedded whitespace).
+        </li>
+        <li>
+            If you simply must have a space in one of your taxon names, 
+either use an underscore character in place of the space (e.g., <span class="NEXUS">Ginkgo_biloba</span>) or surround the taxon name in <span class="makeconspicuous">single</span> quotes (e.g., <span class="NEXUS">'Ginkgo biloba'</span>). In either case, PAUP* will output the space in its output.
+        </li>
+        <li>
+            One item missing from the format command in the example above but which is quite useful is something known as an <span class="newterm">equate list</span>. The following format statement will cause all occurrences of <span class="makeconspicuous">T</span> to be changed to <span class="makeconspicuous">C</span> and all occurrences of <span class="makeconspicuous">G</span> to be changed to <span class="makeconspicuous">A</span> as the data are being read into PAUP*: <pre><span class="NEXUS">
+format datatype=dna missing=? gap=- equate="T=C G=A";</span></pre> 
+            <p>
+                This is like telling PAUP* to do a search-and-replace 
+operation on the sequences before reading them in, except that your 
+original file remains intact. Be careful when using <span class="NEXUS">equate</span>, because the replacement is case sensitive (i.e., <span class="NEXUS">equate="t=c g=a"</span> would have had no effect if all the nucleotides are represented by upper case letters!).
+            </p>
+        </li>
+        <li>
+            PAUP* recognizes all the standard ambiguity codes (e.g., <span class="makeconspicuous">R</span> for purine, <span class="makeconspicuous">Y</span> for pyrimidine, <span class="makeconspicuous">N</span> for undetermined, etc.).
+        </li>
+    </ul>
+    <h4><a name="treesblock"></a>Trees block</h4> A Trees block has the following structure: <pre><span class="NEXUS">#NEXUS
+...
+begin trees;
+  translate
+    1 Ephedra,
+    2 Gnetum,
+    3 Welwitschia,
+    4 Ginkgo,
+    5 Pinus
+  ;
+  tree one = [&amp;U] (1,2,(3,(4,5));
+  tree two = [&amp;U] (1,3,(5,(2,4));
+end;</span></pre> 
+    <p>
+        Some things to note in this example are:
+    </p>
+    <ul>
+        <li>
+            The <span class="NEXUS">translate</span> command provides 
+short alternatives to the taxon names, making the tree descriptions 
+shorter (takes up fewer bytes of disk space).
+        </li>
+        <li>
+            the <span class="NEXUS">translate</span> command is not necessary however; it is ok to use the taxon names directly in the tree descriptions 
+        </li>
+        <li>
+            the <span class="NEXUS">tree</span> command denotes the start of a tree description, which consists of a tree name (e.g., <span class="NEXUS">one</span> and <span class="NEXUS">two</span>
+ are used here), followed by an equals sign and then the tree topology 
+in the standard, parenthetical notation (often referred to as the <span class="newterm">Newick</span> or <span class="newterm">New Hampshire</span> format).
+        </li>
+        <li>
+            The special comments consisting of an ampersand symbol 
+followed by the letter U tell PAUP* to interpret the tree as being an <span class="newterm">unrooted tree</span>.
+        </li>
+        <li>
+            Files containing only the <span class="NEXUS">#NEXUS</span> plus a <span class="NEXUS">trees</span> block are called <span class="newterm">tree files</span> 
+        </li>
+    </ul>
+    <h4><a name="setsblock"></a>Sets block</h4> The only commands you need to know at this point from a <span class="NEXUS">sets</span> block are the <span class="NEXUS">charset</span> and the <span class="NEXUS">taxset</span> commands. <pre><span class="NEXUS">#NEXUS
+...
+begin sets;
+  charset trnL_intron = 562-4226;
+  taxset gnetales = Ephedra Gnetum Welwitschia;
+end;</span></pre> 
+    <p>
+        This <span class="NEXUS">sets</span> block defines both a set of
+ characters (in this case the sites composing the trnL intron) and a set
+ of taxa (consisting of the three genera in the seed plant order 
+Gnetales: Ephedra, Gnetum and Welwitschia). We could have used the taxon
+ numbers for the <span class="NEXUS">taxset</span> definition (e.g., <span class="NEXUS">taxset gnetales = 1-3;</span>)
+ but using the actual names is clearer and less prone to error (just 
+think of what might happen if you decided to reorder your sequences!). 
+These definitions may be used in other blocks. A common use is in 
+commands placed inside a <span class="NEXUS">paup</span> block (see below) or typed directly at the PAUP* command prompt. 
+    </p>
+    <h4><a name="assumptionsblock"></a>Assumptions block</h4> There is only one command I will introduce from the <span class="NEXUS">assumptions</span> block (although there are a number of others that exist). The <span class="NEXUS">exset</span> command (the word <span class="NEXUS">exset</span> stands for <span class="newterm">exclusion set</span>)
+ is useful for creating a set of characters that are automatically 
+excluded whenever the data file is executed. Given the following block: <pre><span class="NEXUS">#NEXUS
+...
+begin assumptions;
+  exset* badsites = 1 5 47-.;
+end;</span></pre> 
+    <p>
+        PAUP* would automatically exclude characters (i.e., sites) 1, 5,
+ and 47 through the end of the sequence. It is the asterisk after the 
+newterm <span class="NEXUS">exset</span> that denotes this as the 
+default exclusion set. If you left out the asterisk, PAUP* would define 
+the exclusion set but would not automatically exclude these sites as the
+ data file was being executed. 
+    </p>
+    <h4><a name="paupblock">Paup block</a></h4> Paup blocks provide a 
+way to give PAUP* commands from within a data file itself. Any command 
+you can type at the command prompt or perform using menu commands you 
+can place in the data file. This allows you to specify an entire 
+analysis right in the data file. For any serious analysis, I always run 
+PAUP* using a paup block. That way I know exactly what I did for a given
+ analysis several days or weeks in the future. Paup blocks are also a 
+handy way to perform certain commands every time the data file is 
+executed. For example, you can set up your favorite likelihood 
+substitution model, delete certain taxa or exclude certain sites from a 
+paup block located just after your data block. Here is an example of a 
+typical paup block: <pre><span class="NEXUS">#NEXUS
+...
+begin paup;
+  log file=myoutput.txt start stop;
+  outgroup Ephedra;
+  set criterion=likelihood;
+  lset nst=2 basefreq=empir rates=equal tratio=estim variant=hky;
+  hsearch swap=tbr addseq=random nreps=100 start=stepwise; 
+  describe 1 / plot=phylogram;
+  savetrees file=mytrees.tre brlens;
+  log stop;
+  quit;  
+end;</span></pre> 
+    <p>
+        Here is what each line does (but don't worry too much about this
+ since we will be talking much more about individual commands later in 
+lab):
+    </p>
+    <ul>
+        <li>
+            The <span class="command">log</span> command starts a log file (the file will be called <span class="filename">myoutput.txt</span> and will be overwritten if it already exists)
+        </li>
+        <li>
+            The <span class="command">outgroup</span> command specifies 
+that the resulting trees should be rooted between Ephedra and everything
+ else (this just affects the appearance of the tree when drawn)
+        </li>
+        <li>
+            The <span class="command">set</span> command changes the optimality criterion from the default (parsimony) to maximum likelihood
+        </li>
+        <li>
+            The <span class="command">lset</span> command sets up PAUP* 
+so that the HKY85 model will be used (number of substitution rates is 2,
+ empirical base frequencies, rates are homogeneous across sites, 
+estimate the transition/transversion ratio, and use the HKY model rather
+ than the other, similar F84 model)
+        </li>
+        <li>
+            The <span class="command">hsearch</span> command causes 
+PAUP* to conduct 100 heuristic searches (each beginning from a 
+different, random starting tree); each search will start with a stepwise
+ addition tree using random addition of taxa, and this starting tree 
+will be rearranged using the tree bisection/reconnection branch swapping
+ method
+        </li>
+        <li>
+            The <span class="command">describe</span> command produces a
+ depiction of the tree (rooted at the specified outgroup) on the output 
+(and in the log file, since we opened a log file earlier); the tree will
+ be shown as a phylogram, which means branch lengths will appear 
+proportional to the average number of nucleotide substitutions per site 
+that were inferred for that branch.
+        </li>
+        <li>
+            The <span class="command">savetrees</span> command saves the best tree found during the search (this is quite important and easy to forget to do!). The <span class="command">brlens</span> keyword tells PAUP to save branch length information along with the tree topology.
+        </li>
+        <li>
+            The <span class="command">log</span> command stops the logging of output to the file <span class="filename">myoutput.txt</span>
+        </li>
+        <li>
+            The <span class="command">quit</span> command causes PAUP* 
+to quit running; if you left out this command, PAUP* would remain 
+running at this point, allowing you to issue other commands
+        </li>
+    </ul>
+    <p>
+        Note that because PAUP* ignores blocks whose names it does not 
+recognize, you can easily "comment out" a paup block by simply adding a 
+character to its name. For example, adding an underscore
+    </p>
+<pre><span class="NEXUS">#NEXUS
+...
+begin _paup;
+.
+.
+.
+end;</span></pre> 
+    <p>
+        is enough to cause PAUP* to completely ignore this paup block. 
+This is handy because it allows you to create multiple paup blocks for 
+different purposes and turn them off and on whenever you need them.
+    </p>
+    <p>
+        You can also "comment out" a portion of a paup block using the <span class="command">leave</span>
+ command. For example, in this paup block, PAUP* will be set up for 
+doing a likelihood analysis but will not actually conduct the search; 
+the <span class="command">leave</span> command causes PAUP* to exit the block early: 
+    </p>
+<pre><span class="NEXUS">#NEXUS
+...
+begin paup;
+  log file=myoutput.txt start stop;
+  outgroup Ephedra;
+  set criterion=likelihood;
+  lset nst=2 basefreq=empir rates=equal tratio=estim variant=hky; 
+  leave;
+  hsearch swap=tbr addseq=random nreps=100 start=stepwise; 
+  describe 1 / plot=phylogram;
+  savetrees file=mytrees.tre brlens;
+  log stop;
+  quit;  
+end;</span></pre> <h1><a name="paupfortoday" id="paupfortoday"></a>Today's PAUP* lab exercise</h1> 
+    <p>
+        First, a note about <span class="NEXUS">characters</span> blocks versus <span class="NEXUS">data</span> blocks: the <span class="NEXUS">characters</span> block is essentially a new and improved version of the <span class="NEXUS">data</span> block. Feel free to use either one, but be aware that programs such as PAUP* may eventually stop using the <span class="NEXUS">data</span> block since the <span class="NEXUS">characters</span> block accomplishes the same thing and has features missing in the <span class="NEXUS">data</span> block. To convert a <span class="NEXUS">data</span> block to a <span class="NEXUS">characters</span> block, just change the block name and add the keyword <span class="NEXUS">newtaxa</span> to the <span class="NEXUS">dimensions</span> command just before the keyword <span class="NEXUS">ntax</span>. This tells PAUP* that you will be defining the names of your taxa in the <span class="NEXUS">characters</span> block itself (rather than in a preceding <span class="NEXUS">taxa</span> block). 
+    </p>
+    <p>
+        <span class="question">Questions that should be answered (or excercises that you should do on your own) appear in this style.</span>
+ There is no need to turn in your answers to these exercises. It is up 
+to you to make sure you are comfortable with this material. Please ask 
+questions if anything is unclear. While it is possible to do these 
+exercises outside of the scheduled lab time, working through them in lab
+ is better because we are here to help with questions that arise. 
+    </p>
+    <ol>
+        <li>
+            First create a folder. 
+        </li><li>
+            Copy the <span class="filename">angio35.txt</span> file from
+ the data folder into your own newly-created folder. (If you are not in 
+the computer lab, you can download the file by right-clicking <a href="http://phylo.bio.ku.edu/slides/data/angio35.txt">here</a> and using your browser's <span class="menu">Save Target As...</span> menu option)
+        </li>
+        <li>
+            Open the <span class="filename">angio35.txt</span> file in a <b>text editor</b>
+ (not microsoft word). Note that the file is not in NEXUS format yet. It
+ contains 35 DNA sequences. These are rbcL gene sequences from various 
+green plants. The important thing to notice is that the format is quite 
+simple: each line consists of a taxon name followed by at least one 
+blank space, which is followed by the sequence for that taxon. Note that
+ the blank space is important: <span class="makeconspicuous">taxon names cannot contain embedded spaces</span>, because spaces are used to <span class="makeconspicuous">separate</span> taxon names from the corresponding sequences.
+        </li>
+        <li>
+            Launch PAUP* from within the directory that contains the <span class="filename">angio35.txt</span> file and type in the following command: <pre><span class="command">toNEXUS from=angio35.txt to=angio35.nex datatype=nucleotide format=text;</span></pre> 
+            <p>
+                After the conversion, the file <span class="filename">angio35.nex</span>
+ should be present. Open this NEXUS file in a text editor to see what 
+PAUP* did to convert the original file to NEXUS format. Do not execute 
+the file in PAUP* just yet because there are some additions we need to 
+make before it is ready for analyzing. 
+            </p>
+        </li>
+        <li>
+            Create an <span class="NEXUS">assumptions</span> block 
+containing a default exclusion set that excludes the following sites 
+automatically whenever the data file is executed. This should be added 
+to the bottom of the newly-created NEXUS file (i.e., after the data). 
+Save the file as plain text. <pre><span class="NEXUS">begin assumptions;</span>
+  <span class="NEXUS">exset * unused = 1-30 2125-2218 2219-2235 2305-2307 5058-5063 4615-4743 5064-5093;
+end;</span></pre> 
+            <p>
+                These numbers represent nucleotide sites that either are
+ missing a lot of data or are difficult to align. The name I gave to 
+this exclusion set is <span class="makeconspicuous">unused</span>, but 
+you could name it anything you like. The asterisk tells PAUP* that you 
+want this exset applied (i.e. you want these sites excluded) every time 
+the file is executed.
+            </p>
+        </li>
+        <li>
+            Create a <span class="NEXUS">sets</span> block comprising the following four <span class="NEXUS">charset</span> commands: 
+            <ul>
+                <li>
+                    The first charset should be named nad4 and include sites 1 through 2235 
+                </li>
+                <li>
+                    The second charset should be named rps4 and include sites 2236 through 2985 
+                </li>
+                <li>
+                    The second charset should be named rbcL and include sites 2986 through 4391 
+                </li>
+                <li>
+                    The third charset should be named other and include sites with numbers above 4391 
+                </li>
+            </ul>
+            <p>
+                This block should be placed after the <span class="NEXUS">assumptions</span> block. Look at the <a href="#setsblock">description above</a> of the sets block and try to do this part on your own.
+            </p>
+        </li>
+        <li>
+            Now execute the data file by invoking paup and typing the execute command: <pre><span class="command">execute angio35.nex ;</span></pre>
+ If your assumptions block is correct, the output should include a 
+statement saying that 309 characters have been excluded. If you set up 
+your sets block correctly you should be able to enter this command: <pre><span class="command">exclude all;</span>
+<span class="command">include rbcL;</span></pre> 
+            <p>
+                and get no errors. In addition, PAUP* should tell you that 5093 characters were excluded (as a result of the <span class="command">exclude all</span> command) and 1406 were re-included (as a result of the <span class="command">include rbcL</span>
+ command). For the rest of the exercise, we will be working with the 
+data from the first 3 genes, so re-include the nad4 and rps4 data:
+            </p>
+<pre><span class="command">include nad4 rps4;</span></pre> 
+            <p>
+                PAUP* should now say that there are a total of 4391 included characters.
+            </p>
+        </li>
+        <li>
+            The first item of business in starting an analysis in PAUP* 
+is to begin logging the output to a file. The following command will 
+begin saving all output to the file <span class="filename">output.txt</span>.
+ Note that we have chosen to automatically replace the file if it 
+already exists. If you are nervous about this (and would rather have 
+PAUP* ask before overwriting an existing file), either leave off the <span class="command">replace</span> keyword or substitute <span class="command">append</span>, which tells PAUP* to simply add new output to the end of the file if it already exists. <pre><span class="command">log file=output.txt start replace;</span></pre> 
+        </li>
+        <li>
+            Type <span class="command">set ?</span> to get a listing of the general settings. PAUP* has four "settings" commands: <span class="command">set</span> for general settings; <span class="command">pset</span> for settings specifically related to parsimony; <span class="command">lset</span> for settings specifically related to likelihood; and <span class="command">dset</span> for settings specifically related to distance methods. 
+            <p>
+                <span class="question">From the output of the set 
+command, can you determine which optimality criterion PAUP* would use if
+ we were to do a search at this point?</span>
+            </p>
+        </li>
+        <li>
+            To perform a parsimony search, first try the <span class="command">alltrees</span> command. This command asks PAUP* to calculate the optimality criterion for every possible tree <pre class="command">alltrees;</pre> 
+            <p>
+                <span class="question">Did PAUP* allow you to perform an exhaustive search for 35 taxa?</span>
+            </p>
+        </li>
+        <li>
+            Now try heuristic searching. This approach does not attempt 
+to look at all possible trees, but instead only examines trees that are 
+in the realm of possibility (which can still be a lot of trees!):
+            <br>
+<pre>hsearch;</pre> 
+            <p>
+                The search progress will be displayed in a dialog box. 
+When the button says Close rather than Stop, take a look at the numbers 
+summarizing this search. <span class="question">What is the parsimony score of the best tree found during the search? </span>(Write down this score somewhere for later reference.) <span class="question">How many trees were examined (look at # Rearrangements tried)?</span>
+            </p>
+        </li>
+        <li>
+            Now you probably want to take a look at the tree that PAUP* 
+found and is now holding in memory. First, however, choose an outgroup 
+taxon so that the (unrooted) tree will be drawn in a way that looks like
+ it is rooted in a reasonable place: <pre><span class="command">outgroup Funaria_hygrometrica ;
+showtree;</span></pre> 
+            <p>
+                To make the tree appear to flow downward, which is more 
+pleasing to the eye, tell PAUP* that you would like to use the tree 
+order "right" (this is also commonly known as "ladderizing right"):
+            </p>
+<pre><span class="command">set torder=right;
+showtree;</span></pre> 
+            <p>
+                Before doing anything else, we should save this tree in a
+ file so that it will be available later, perhaps for viewing or 
+printing in TreeView. Let's call the treefile <span class="filename">pars.tre</span>. The <span class="command">brlens</span>
+ keyword in the command below tells PAUP* that you want to save the 
+branch lengths as well as just the tree topology (almost always a good 
+option to include):
+            </p>
+<pre><span class="command">savetrees file=pars.tre brlens;</span></pre> 
+        </li>
+        <li>
+            You may have noticed that PAUP* found 10 most-parsimonious 
+trees. These 10 trees are all indistinguishable using the parsimony 
+criterion. Let's now use the likelihood criterion to evaluate these 10 
+trees: <pre><span class="command">set criterion=likelihood;</span>
+<span class="command">lscores all;</span></pre> 
+            <p>
+                These commands ask PAUP* to simply evaluate the 
+likelihood score of the trees in memory. Note that because we arrived at
+ these trees using parsimony, it is quite possible that none of these 
+trees represents the maximum likelihood tree. That is, we may be able to
+ find better trees under the likelihood criterion if we performed a 
+search using the likelihood criterion. <span class="qcommand">What is the likelihood score of the best tree? </span>(As for parsimony, write this number down for later comparison.) <span class="qcommand">Is the likelihood score the same for all 10 trees?</span> Which tree is best? <span class="makeconspicuous">Important:
+ PAUP* reports the negative of the natural logarithm of the likelihood 
+score. This means that smaller numbers are better, as smaller numbers 
+represent higher likelihoods.</span>
+            </p>
+        </li>
+        <li>
+            Next, we will obtain a neighbor-joining tree. 
+Neighbor-joining (NJ for short) is one of the algorithmic methods: that 
+is, it uses an optimality criterion (the minimum evolution criterion) at
+ each step of the algorithm, but in the end produces a tree without 
+actually examining many trees: <pre><span class="command">nj;</span></pre> 
+        </li>
+        <li>
+            Let's see how the NJ tree compares to the tree found by parsimony. First, use the <span class="command">lscores</span> command to compute the log-likelihood of the NJ tree: <pre><span class="command">lscores all;</span></pre> Now compute the parsimony score of the NJ tree using the <span class="command">pscores</span> command: <pre><span class="command">pscores all;</span>
+</pre> 
+            <p class="question">
+                According to the parsimony criterion, is the NJ tree 
+better than any of the trees found by parsimony? According to the 
+likelihood criterion, is the NJ tree better than the best tree you have 
+found thus far?
+            </p>
+        </li>
+        <li>
+            That's all for today in PAUP: <pre><span class="command">log stop;
+quit;</span></pre> Now we'll look at Mesquite a bit. 
+        </li>
+    </ol>
+    <h1><a name="mesquite" id="mesquite"></a>Mesquite</h1> 
+    <p>
+        Mesquite is a graphical system for the visualization and 
+analysis of comparative data in a phylogenetic context. The home page is
+ <a href="http://mesquiteproject.org/">mesquiteproject.org</a> 
+    </p>
+    <p>
+        Wayne and David Maddison are the lead authors, but Mesquite was 
+designed to be modular and encourage community input (in fact one of the
+ leading contributors is Dr. Peter Midford, who is currently at KU). 
+Mesquite is free, open-source and written in Java so that it should run 
+on any modern computer. There are some analyses of character data that 
+can only be performed in Mesquite, and a large set of features that are 
+available in other tools such as MacClade. I strongly encourage you to 
+look at the feature list on the Mesquite <a href="http://mesquiteproject.org/mesquite/features.html">features page</a> to get a feeling for the types of analyses that Mesquite can perform. 
+    </p>
+    <p>
+        One of Mesquites great strengths is that it serves as a 
+user-friendly editor for phylogenetic data. The underlying file format 
+that Mesquite uses is the NEXUS format that is used by PAUP* and 
+MrBayes. So you can use Mesquite as a way of getting your data ready for
+ phylogenetic analysis (unfortunately every program tends to speak a 
+slightly different dialect of NEXUS, so some hand-editing is often 
+required). 
+    </p>
+    <p>
+        Because it is a graphical program it is very tedious to describe
+ how to perform actions in Mesquite in detail. Rather than say:
+        <br>
+        "Go to the <span class="command">Taxa&amp;Trees</span> menu. Choose the <span class="command">New Tree Window</span>. Click on the <span class="command">Default Trees</span> choice. Hit the <span class="command">OK</span> button." 
+    </p>
+    <p>
+        I will use an abbreviated syntax like this:
+        <br>
+        <span class="command">Taxa&amp;Trees &gt;&gt; New Tree Window &gt;&gt; Default Trees</span>
+        <br>
+        Note that you cannot tell by looking at that instruction which 
+steps are menu options and which are options in a dialog box. I also 
+will omit the "click OK" step. If you start looking for the command in 
+the menu's of Mesquite and follow through with each step of instruction,
+ it should be fairly easy to interpret these instructions
+    </p>
+    <ol>
+        <li>
+            Download Mesquite and launch it by double-clicking on the Mesquite icon.
+        </li>
+        <li>
+            Copy the file <span class="filename">angio35.txt</span> to <span class="filename">original-angio35.txt</span> so that if Mesquite modifies the file in an unexpected way we can get back the original data.
+        </li>
+        <li>
+            Open the file using <span class="command">File &gt;&gt; Open File...</span> 
+        </li>
+        <li>
+            You should see the "project view" of the file which will 
+have icons for various views of the data for instance you can manipulate
+ data about the taxa by clicking on the "Taxa/List &amp; Manage Taxa" 
+button. Look at the character matrix by clicking on the "Show Matrix" 
+button. Familiarize yourself with the matrix editing tools that show up 
+in the toolbar next to the matrix. When you mouse-over a button in the 
+toolbar a description of the tool should appear in the status box at the
+ bottom of the window. 
+            <br>
+            Note that there are 2 toolbars: one to the left of the matrix and one under the taxa labels.
+            <p class="question">
+                Can you add an annotation saying "I don't trust this 
+basecall" to the cell that corresponds to the tenth character and the 
+11th taxon? 
+            </p>
+        </li>
+        <li>
+            Go back to the Project tab and look at the "List &amp; Manage Characters" view. 
+            <p class="question">
+                Can you tell which characters were excluded in the exset of the file?
+            </p>
+        </li>
+        <li>
+            We created some trees in PAUP*, but those were saved to 
+another file. Let's see if we can tell Mesquite that the trees are 
+associated with this data. Use:
+            <br>
+            <span class="command">Taxa&amp;Trees &gt;&gt; Import File With Trees &gt;&gt; Link Contents... </span> and the browse to the <span class="filename">pars.tre</span>
+ file. This should result in a Trees panel in the project tab. By 
+selecting "Show Trees" you should be able to examine the trees in a new 
+window.
+        </li>
+        <li>
+            Use <span class="command">Analysis &gt;&gt; Values for Current Tree... &gt;&gt; Treelength </span> to make the tree window display the number of steps required to explain the tree. 
+            <p class="question">
+                Does the tree length agree with the parsimony score in PAUP? If not, why not?
+            </p>
+        </li>
+        <li>
+            <p class="question">
+                Is the tree rooted on the outgroup (<i>Funaria hygrometrica</i>)? If not, why not?
+            </p>
+            Get familiar with the tools in the tree window's tool bar. 
+Find the rerooting tool and use it to redraw the tree such that <i>Funaria hygrometrica</i> is the outgroup. 
+            <p class="question">
+                Did the tree length change when you rerooted the tree?
+            </p>
+        </li>
+        <li>
+            To look at a most parsimonious reconstruction of the character states, we can use <span class="command">Analysis &gt;&gt; Trace Character History &gt;&gt; Parsimony Ancestral Character States </span>.
+ The tree should now be colored (something other than black). The legend
+ in the bottom corner of the window shows how the colors map to the 
+states, what character is being traced, and the number of steps required
+ to explain this character. Find a variable character and look at 
+several rerootings of the tree. 
+            <p class="question">
+                Does the tree length for the character ever change?
+            </p>
+            Find a character with homoplasy in it and use the "Move 
+Branch" tool to rearrang the tree so that there is no homoplasy in that 
+character
+            <p class="question">
+                What happened to the total tree length when you made the changes?
+            </p>
+        </li>
+        <li>Quit Mesquite and save the changes to the file (you are 
+welcome to continue to check out Mesquite, but we are done with it for 
+today's lab).</li>
+        <li> Open <span class="filename">angio35.nex</span> and look at the changes that Mesquite made.  <p class="question">
+                Can you find the annotations that you made about the 
+cell of the character matrix?  Do you think that these changes will 
+interfere with PAUP reading the file? Were the trees from the parsimony 
+analysis included in the file?
+                
+            </p>
+        </li><li>Start PAUP* again.  Execute the <span class="filename">angio35.nex</span> file and then use paup's GetTrees command to get the trees from the <span class="filename">pars.tre</span>
+ file.  Calculate the parsimony scores of the trees (if you changed them
+ in Mesquite then they will not all be the same score as they were 
+before you ran Mesquite.</li>
+    </ol>
+</div>
+<!-- InstanceEndEditable -->
+
+
+
+</body><!-- InstanceEnd --></html>
