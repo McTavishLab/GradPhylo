@@ -27,7 +27,7 @@
 \setbeamertemplate{footline}[frame number]{}
 \setbeamertemplate{footline}{}
 
-\title[*]{Phylogenetic terminology and applications}
+\title[*]{Phylogenetic inference and likelihood}
 \author[*]{Emily Jane McTavish}
 \institute[*]{
 Life and Environmental Sciences\\
@@ -41,185 +41,103 @@ University of California, Merced\\
 
 \begin{frame}
 \titlepage
-(With thanks to Mark Holder, Paul Lewis, Joe Felsenstein, and David Hillis for slides) 
+(With thanks to Mark Holder and Paul Lewis for slides) 
 \end{frame}
+
 
 
 
 \begin{frame}
-\begin{center}
- \Large{Phylogenies describe shared ancestry\\
-and\\
-inform our understanding of evolutionary processes}
-\end{center}
+Rule: Two taxa that share a character state must be more
+closely related to each other than either is to a taxon that
+displays a different state.(method suggested by Hennig)\\ 
+\textit{Is this a valid rule?}
 \end{frame}
+%\appendix
+%\begin{frame}[allowframebreaks]
+% \bibliography{GradPhylo}
+%\end{frame}
 
-
-%-----comp meth examples------
-\setbeamercolor{background canvas}{bg=}
-\includepdf[pages=3-14]{lec1-IntroStats.pdf}
-
-
-%-------tree terms------
-\setbeamercolor{background canvas}{bg=}
-\includepdf[pages=18-23]{lec1-IntroStats.pdf}
-
-\begin{frame}
-\begin{centering}
-\includegraphics[width=\textwidth]{xkcdherp}
-\end{centering}\\
-https://xkcd.com/867/
-\end{frame}
 
 \setbeamercolor{background canvas}{bg=}
-\includepdf[pages=24]{lec1-IntroStats.pdf}
+\includepdf[pages=75-82]{../../../markphylo/2017/lec1-IntroStats.pdf}
 
-
-\begin{frame}
-\begin{centering}
-\includegraphics[height=0.8\textheight]{poly}
-\end{centering}\\
-from wikipedia
-\end{frame}
 
 
 \begin{frame}
-more terms:
 \begin{itemize}
- \item sister taxa: taxa or monophyletic groups which share a most recent common ancestor
- \item outgroup: taxon that is determined \emph{a priori} to be sister to all other taxa in the analysis. Used for rooting tree
-\end{itemize}
-
-\end{frame}
-
-\setbeamercolor{background canvas}{bg=}
-\includepdf[pages=27-29]{lec1-IntroStats.pdf}
-
-%-----Digression into newick format
-
-\begin{frame}
- \center{\Large a brief digression into newick tree file format}
-\end{frame}
-
-
-\begin{frame}
-\begin{centering}
-\includegraphics[height=0.4\textheight]{/home/ejmctavish/Desktop/Talks/newicklobster}
-\end{centering}\\
- Newick’s Lobster House was the site of an historic 1986 meeting 
- at which a standard was devised for storing descriptions of 
- phylogenetic trees as strings. 
- (Photo from Paul Lewis)
-\end{frame}
-
-
-\setbeamercolor{background canvas}{bg=}
-\includepdf[pages=79-91]{/home/ejmctavish/Desktop/Talks/2013_SISG_13_1_slidelayout.pdf}
-
-
-
-\begin{frame}
-Newick\\
-\begin{itemize}
- \item Parenthetical tree format
- \item Rooted vs. unrooted trees are not differentiated
- \item Some programs interpret polytomy at root as `unrooted
- \item Branches and nodes not well differentiated
- \item A name can contain and characters except blanks, colons, semicolons, parentheses, and square brackets
+ \item If characters are not polarized (ancestral and descendent states known)
+ method can infer unrooted trees.
+ \item We can infer tree topology, but be unable to tell paraphyletic from
+monophyletic groups.
+ \item The outgroup method amounts to inferring an unrooted tree and then
+rooting the tree on the branch that leads to an outgroup.
 \end{itemize}
 \end{frame}
 
 
-%----------Play Break---------------
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=4]{../../../markphylo/2017/lec4-ML-CompatPars.pdf}
+
 \begin{frame}
-\frametitle{DIY}
-Create a newick tree file in your text editor with the content:
-\texttt{(((C,(D,E)),(F,G),A),B);}\\
-Save it as 'example.tre'.\\
+\textbf{problems with this approach}
 \begin{itemize}
- \item Draw the tree by hand
- \item Write down all the splits in ..** format.
- \item Re-root  the tree. What rootings make the following true? Which cannot be true?
- \begin{itemize}
- \item A is more closely related to G than it is to C
- \item (C,D,E) is sister to (A,B,F,G)
- \item (C,D) is sister to (A,B,E,F,G)
- \item (C,D,E) is a paraphyletic group
- \item (C,D,E) is a monophyletic group
- \item (A,B,C) is a monophyletic group
- \end{itemize}
+ \item We don't know polarization
+ \item We observe character conflict in real data sets
 \end{itemize}
 \end{frame}
 
 
-%----Disease stuff from Hillis -----
 
 \setbeamercolor{background canvas}{bg=}
-\includepdf[pages=13-25]{../../../HillisMolEvol2014.pdf}
-
-\begin{frame}
-Changing the rooting of this phylogeny would change inferences!
-\end{frame}
-
-
-%-----------------
-\begin{frame}
-Phylogenies can reveal suprising patterns
- \includegraphics[width=0.75\textwidth]{butterflycut}
-\end{frame}
-
-\begin{frame}
-Phylogenies can reveal suprising patterns
- \includegraphics[width=\textwidth]{butterfly}
- \citep{joron_chromosomal_2011}
-\end{frame}
-
+\includepdf[pages=6-23]{../../../markphylo/2017/lec4-ML-CompatPars.pdf}
 
 
 \begin{frame}
-What evolutionary processes can drive these patterns?
+\textbf{Should we expect character conflict?}
 \begin{itemize}
- \item Convergence
- \item Horizontal gene transfer
- \item Incomplete lineage sorting
- \item ?
-\end{itemize}
-\pause
-We will discuss how to recognize and (try to) differentiate these processes.
-\end{frame}
-
-\begin{frame}
-Different data can drive different conclusions
- \includegraphics[width=\textwidth]{batspptree}\\
-Species relationships between echolocating and nonecholocating bats (after Teeling 2009).
-Left: inferences from DNA sequence data.\\
-Right: traditional species relationships inferred from morphological characters (and limited sequence data).
-\citep{hahn_irrational_2016}
-\end{frame}
-
-
-
-\begin{frame}
-Estimating a tree from character data\\
-Tree construction:
-\begin{itemize}
- \item strictly algorithmic approaches - use a “recipe” to construct a tree
-  \item optimality based approaches - choose a way to “score” a trees and then search for the tree that has the best score.
-\end{itemize}
-
-Expressing support for aspects of the tree:
-\begin{itemize}
- \item  bootstrapping,
- \item testing competing trees against each other,
- \item posterior probabilities (in Bayesian approaches).
+ \item Data type?
+ \item Evolutionary history?
 \end{itemize}
 \end{frame}
 
 
-\appendix
-\begin{frame}[allowframebreaks]
- \bibliography{GradPhylo}
+\begin{frame}
+\textbf{How can we deal with character conflict?}
+\begin{itemize}
+ \item We need to apply an error model
+ \item Likelihood provides a measure of surprise under different models
+\end{itemize}
 \end{frame}
+
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=15]{../../../Lewis/Likelihood2017.pdf}
+
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=5]{../../../Lewis/Likelihood2017.pdf}
+
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=16-22]{../../../Lewis/Likelihood2017.pdf}
+
+\begin{frame}
+\textbf{Discussion Question}\\
+Is it possible for the EQUAL model to fit a data set better (using the likeli-
+hood to measure model fit) than the FLEXIBLE model? Why or why not?
+\end{frame}
+
+
+
+\begin{frame}
+\textbf{Historical aside}\\
+\includegraphics[width=0.8\textwidth]{pheneticscladisticstshirt}
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=20]{../../../Hillis/WoodsHoleMole2017.pdf}
+
 
 
 
