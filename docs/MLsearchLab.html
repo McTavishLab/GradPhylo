@@ -54,8 +54,7 @@ p {
 </li><li><a href="#exercise3">exercise 3: constrain a search</a>
 </li><li><a href="#exercise4">exercise 4: bootstrap analyses</a>
 </li><li><a href="#exercise5">exercise 5: bootstrapping and ascertainment bias</a>
-</li><li><a href="#exercise6">exercise 6: use a partitioned model</a>
-<!-- 
+<!-- </li><li><a href="#exercise6">exercise 6: use a partitioned model</a>
 </li><li><a href="#exercise9">exercise 9: use a codon model</a>
 </li><li><a href="#exercise10">exercise 10: use gap (insertion-deletion) models</a>
 </li><li><a href="#exercise11">exercise 11: further exercises</a>
@@ -65,10 +64,10 @@ p {
 <h4 class="heading" id="gettingstarted">getting started</h4>
 <p>
 <ul>
-<li>Download the package of files used in this activity: <a href="https://mctavishlab.github.io/assets/MLsearch.WH2017.zip">MLsearch.WH2017.zip</a><br>
+<li>Download the package of files used in this activity: <a href="https://mctavishlab.github.io/GradPhylo/assignments/MLsearch.2017.zip">MLsearch.WH2017.zip</a><br>
 Login to the cluster and type</p>
 <p>wget https://mctavishlab.github.io/assets/MLsearch.WH2017.zip
-</li><li>Uncompress the zip file using "<span class="command">unzip MLsearch.WH2017.zip</span>"
+</li><li>Uncompress the zip file using "<span class="command">unzip MLsearch.2017.zip</span>"
 </ul>
 <ul><b>You will need to make edits to the configuration file and command line arguments in most cases.</b>
 </ul>
@@ -89,7 +88,9 @@ GARLI reads all of its settings from a configuration file.  By default it looks 
 <p>
 The config file is divided into two parts: <span class="config">[general]</span> and <span class="config">[master]</span>. The <span class="config">[general]</span> section specifies settings such as the data set to be read, starting conditions, model settings, and output files. To start running a new data set, the only setting that <i>must</i> be specified is the <span class="config">datafname</span>, which specifies the file containing the data matrix in Nexus, PHYLIP, or FASTA format. The <span class="config">[master]</span> section specifies settings that control the functioning of the genetic algorithm itself, and typically the default settings can be used. Basic template configuration files are included with any download of the program. </p>
 <p>
+<strong>Don't try interactive analyses unless you are using 'qrsh'to login to a node</strong>
 Run garli by calling the software and telling it the name of the configuration file to use. 
+
 
 To run:<br>
 <span class="command"> garli &lsaquo;garli config file&rsaquo;</span>
@@ -118,7 +119,7 @@ We will set up several analyses in both RAxML and Garli for comparison and to ex
 <p><ol>
 </li><li>Change to the <span class="file">MLSearchLab</span> directory
 
-</li><li>Open the <span class="file">garli_ex1.conf</span> file in a text editor (either using nano on the cluster or editing via Cyberduck).
+</li><li>Open the <span class="file">garli_ex1.conf</span> file in a text editor.
 </li></ol>
 </p><p>
 <strong>Garli</strong><br>
@@ -154,7 +155,7 @@ invariantsites = estimates
 We will do this just in Garli, because it is more straightforward than monitoring a run in RAxML<br>
 <p><ol>
 <li>Look in the <span class="file">MLSearchLab</span> directory, and note the files that have been created by the run.
-</li><li>Open <span class="file">garli_run1.log00.log</span> in a text editor. (Either on the cluster or via Cyberduck.)
+</li><li>Open <span class="file">garli_run1.log00.log</span> in a text editor.
 
 <p>
 This file logs the current best <i>ln</i>L, runtime, and optimization precision over the course of the run. It is useful for plotting the <i>ln</i>L over time. Next, we will look at the file that logs all of the information that is output to the screen. </p>
@@ -179,6 +180,7 @@ RAxML also implements a similar, faster model, GTRCAT, that uses a different app
 with less than 50 taxa. In general there will not be enough data per alignment column available to reliably estimate the per-site rate parameters. We only have 29 taxa here, so we will stick with GTRGAMMA.<br>
 
 We will compare the likelihoods of our trees from our RAxML and Garli searches in Exercise 3<br>
+Set up a submission script, and submit this job to the fastq.<br>
 </p>
 <ol>
 <li><span class="command">raxmlHPC -m GTRGAMMAI -p &lsaquo;choose a random number seed&rsaquo; -# 2 -s datafiles/murphy29.rag1rag2.fasta -n rax01</span><br>
@@ -456,7 +458,7 @@ NOTE: The ascertainment bias corrections in RAxML will not run if there are <str
 </p>
 <p><div class="btop-wrap"><a href="#top" class="btop">back to top</a></div>
 
-
+<!--
 <h4 class="heading" id="exercise6">exercise 6: use a partitioned model</h4>
 <p>
 Partitioned models are those that divide alignment columns into discrete subsets <i>a priori</i>, and then apply independent substitution submodels to each. There are a nearly infinite number of ways that an alignment could be partitioned and have submodels assigned, so not surprisingly configuration of these analyses is more complex.  </p>
@@ -577,7 +579,7 @@ Next week we will discuss genetree-species tree approaches which allow variation
 </ol>
 
 
-<!--
+
 <h4 class="heading" id="exercise7">exercise 7: use a custom amino acid model</h4>
 
 
