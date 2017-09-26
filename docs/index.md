@@ -27,10 +27,14 @@ Please complete setup instructions listed at [https://mctavishlab.github.io/Grad
 [Discussion paper Sept 1](https://github.com/McTavishLab/GradPhylo/raw/master/docs/discussion/Zhang2016.pdf) Zhang et al. 2016 Genome-wide introgression among distantly related Heliconius butterfly species    
 [Week 2 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/inference.pdf) Inference  
 [Discussion paper Sept 8](https://github.com/McTavishLab/GradPhylo/raw/master/docs/discussion/Molecular_data_in_conjunction_with_morph.pdf)   
-[Merced Cluster slides](https://github.com/McTavishLab/GradPhylo/raw/master/docs/slides/Merced_Cluster_Basics.pptx) 
+[Merced Cluster slides](https://github.com/McTavishLab/GradPhylo/raw/master/docs/slides/Merced_Cluster_Basics.pptx)   
 [Week 3 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/likelihood.pdf) Inference and likelihood    
 Discussion paper Sept 15 sent to list (unpublished)  
 [Week 4 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/likelihood2.pdf) Likelihood and models   
+[Week 5 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/ML_search.pdf) Likelihood searching    
+[Week 5 lab](https://mctavishlab.github.io/GradPhylo/MLsearchLab.html) ML search lab    
+
+
 
 
 ---
