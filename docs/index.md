@@ -36,6 +36,7 @@ Discussion paper Sept 15 sent to list (unpublished)
 [Week 6 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/AscBias.pdf) Ascertainment Bias   
 [Week 6 lab](http://phylosolutions.com/paup-tutorial/) Model selection in PAUP demo (wasn't enough time, optional)    
 [Week 7 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/BayeisanIntro.pdf) Intro to Bayesian inference   
+[Monte Hall game link](https://docs.google.com/spreadsheets/d/1IWZQzN7KJQAxtw6kD19-mr8IEnISmEIoLUj61fe0bdg/edit?usp=sharing)    
 
 
 
