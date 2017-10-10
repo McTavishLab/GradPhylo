@@ -33,7 +33,7 @@ Discussion paper Sept 15 sent to list (unpublished)
 [Week 4 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/likelihood2.pdf) Likelihood and models   
 [Week 5 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/ML_search.pdf) Likelihood searching    
 [Week 5 lab](https://mctavishlab.github.io/GradPhylo/MLsearchLab.html) ML search lab    
-[Week 6 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/AscBias.pdf) Ascertianment Bias   
+[Week 6 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/AscBias.pdf) Ascertainment Bias   
 [Week 6 lab](http://phylosolutions.com/paup-tutorial/) Model selection in PAUP demo (time permitting)    
 
 
