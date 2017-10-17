@@ -37,6 +37,9 @@ Discussion paper Sept 15 sent to list (unpublished)
 [Week 6 lab](http://phylosolutions.com/paup-tutorial/) Model selection in PAUP demo (wasn't enough time, optional)    
 [Week 7 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/BayesIntro.pdf) Intro to Bayesian inference   
 [Monte Hall game link](https://docs.google.com/spreadsheets/d/1IWZQzN7KJQAxtw6kD19-mr8IEnISmEIoLUj61fe0bdg/edit?usp=sharing)    
+[Week 8 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Bayes2.pdf)
+[MCMC tutorial in RevBayes]
+http://revbayes.github.io/tutorials.html
 
 
 
