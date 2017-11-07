@@ -47,7 +47,7 @@ Discussion paper Sept 15 sent to list (unpublished)
 Week 12 Paper discussion; the coalescent and gene tree/species tree estimation    
 Week 13 Ancestral state reconstruction, computer lab    
 Week 14 Topology testing, bayes factors    
-Week 15 Catch up    
+Week 15 Choose your own adventure!    
 
 
 
