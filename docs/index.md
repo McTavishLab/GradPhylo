@@ -42,6 +42,9 @@ Discussion paper Sept 15 sent to list (unpublished)
 [Week 9 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Diversification.pdf)    
 [Optional Lab on diversification in RevBayes](http://revbayes.github.io/tutorials.html)    
 [Week 10 paper discussion and divergence time based on Tracy Heath's  slides](https://www.slideshare.net/trayc7/bayesian-divergence-time-estimation-lecture-at-bodega-2014-workshop?from_action=save)    
+[Week 11 Computer lab on BEAST 2: introduction](https://taming-the-beast.github.io/tutorials/Introduction-to-BEAST2/)    
+[Week 11 Computer lab on BEAST 2: divergence time estimation](https://taming-the-beast.github.io/tutorials/FBD-tutorial/)    
+
 
 ---
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
