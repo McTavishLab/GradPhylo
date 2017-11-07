@@ -43,7 +43,12 @@ Discussion paper Sept 15 sent to list (unpublished)
 [Optional Lab on diversification in RevBayes](http://revbayes.github.io/tutorials.html)    
 [Week 10 paper discussion and divergence time based on Tracy Heath's  slides](https://www.slideshare.net/trayc7/bayesian-divergence-time-estimation-lecture-at-bodega-2014-workshop?from_action=save)    
 [Week 11 Computer lab on BEAST 2: introduction](https://taming-the-beast.github.io/tutorials/Introduction-to-BEAST2/)    
-[Week 11 Computer lab on BEAST 2: divergence time estimation](https://taming-the-beast.github.io/tutorials/FBD-tutorial/)    
+[Week 11 Computer lab on BEAST 2: divergence time estimation](https://taming-the-beast.github.io/tutorials/FBD-tutorial/)   
+Week 12 Paper discussion; the coalescent and gene tree/species tree estimation    
+Week 13 Ancestral state reconstruction, computer lab    
+Week 14 Topology testing, bayes factors    
+Week 15 Catch up    
+
 
 
 ---
