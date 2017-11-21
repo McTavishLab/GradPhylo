@@ -45,7 +45,7 @@ Discussion paper Sept 15 sent to list (unpublished)
 [Week 11 Computer lab on BEAST 2: introduction](https://taming-the-beast.github.io/tutorials/Introduction-to-BEAST2/)    
 [Week 11 Computer lab on BEAST 2: divergence time estimation](https://taming-the-beast.github.io/tutorials/FBD-tutorial/)   
 Week 12 Paper discussion; [the coalescent and gene tree/species tree estimation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/GeneTreeSppTree.pdf)    
-Week 13  Paper discussion; Gene Tree Spp Tree lab    
+Week 13  Paper discussion; finish Gene Tree Spp Tree lecture; [Optional SVD quartets lab](http://evomics.org/wp-content/uploads/2016/06/SVDquartets_tutorial2017.html)
 Week 14  Ancestral state reconstruction lecture and lab    
 Week 15  Topology testing, bayes factors    
 
