@@ -46,7 +46,7 @@ Discussion paper Sept 15 sent to list (unpublished)
 [Week 11 Computer lab on BEAST 2: divergence time estimation](https://taming-the-beast.github.io/tutorials/FBD-tutorial/)   
 Week 12 Paper discussion; [the coalescent and gene tree/species tree estimation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/GeneTreeSppTree.pdf)    
 Week 13  Paper discussion; finish Gene Tree Spp Tree lecture; [Optional SVD quartets lab](http://evomics.org/wp-content/uploads/2016/06/SVDquartets_tutorial2017.html)    
-Week 14  Ancestral state reconstruction [No slides, but some drawings based on Cunningham et al. 1998](http://sites.biology.duke.edu/cunningham/pdfs/science%202.pdf) [lab](http://www.phytools.org/eqg2015/asr.html)    
+Week 14  Comparative methods and Ancestral state reconstruction [images](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Comp_Meth.pdf) [lab](http://www.phytools.org/eqg2015/asr.html)    
 Week 15  Topology testing, bayes factors    
 
 
