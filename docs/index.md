@@ -21,5 +21,10 @@ Please complete setup instructions listed at [https://mctavishlab.github.io/Grad
 
 New materials will be posted here, material from when this was taught in 2017 at [https://mctavishlab.github.io/GradPhylo/gp2017](https://mctavishlab.github.io/GradPhylo/gp2017)
 
+
+[Complete tree thinking quiz before first class](https://github.com/McTavishLab/GradPhylo/raw/master/docs/assignments/Week1)    
+
+
+
 ---
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
