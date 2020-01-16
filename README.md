@@ -1,4 +1,4 @@
-# Graduate Phylogenetics - Fall 2017
+# Graduate Phylogenetics
 
 ## University of California, Merced -- QSB/ES 244
 
