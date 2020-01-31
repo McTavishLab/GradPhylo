@@ -25,6 +25,8 @@ New materials will be posted here, material from when this was taught in 2017 at
 [Complete tree thinking quiz before first class](https://github.com/McTavishLab/GradPhylo/raw/master/docs/assignments/Week1)    
 [Intro slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_phylo.pdf)    
 [Week 1 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/tree_terms_applications.pdf) Tree terminology and applications    
+[Week 2 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/inference.pdf) Inferring trees from data
+[Intro  to HPC slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_comp.pdf) Intro to computation
 
 
 

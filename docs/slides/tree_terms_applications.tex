@@ -134,6 +134,7 @@ Splits\\
 
 
 
+
 \begin{frame}
 Newick\\
 \begin{itemize}
@@ -144,6 +145,76 @@ Newick\\
  \item A name can contain and characters except blanks, colons, semicolons, parentheses, and square brackets
 \end{itemize}
 \end{frame}
+
+\begin{frame}
+Nexus\\
+\begin{itemize}
+ \item Starts with \#nexus
+ \item Can contain blocks of alignments, trees, commands, and more!
+ \item Blocks between `begin' and `end'
+ \item Trees in Newick format, prepended with [\&U] unrooted or [\&R] rooted
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+Nexus\\
+\includegraphics[height=0.3\textheight]{/home/ejmctavish/Desktop/Talks/nexustaxa}\\
+\includegraphics[height=0.3\textheight]{/home/ejmctavish/Desktop/Talks/nexusdata}\\
+\url{http://hydrodictyon.eeb.uconn.edu/eebedia/index.php/Phylogenetics:_NEXUS_Format}
+\end{frame}
+\begin{frame}
+Nexus\\
+\includegraphics[height=0.3\textheight]{/home/ejmctavish/Desktop/Talks/nexustrees}\\
+\includegraphics[height=0.2\textheight]{/home/ejmctavish/Desktop/Talks/nexussets}\\
+\url{http://hydrodictyon.eeb.uconn.edu/eebedia/index.php/Phylogenetics:_NEXUS_Format}
+\end{frame}
+
+
+\begin{frame}
+NeXML\\
+\begin{itemize}
+ \item Phylogenetic data as XML
+ \item Can capture all information from Nexus
+ \item Full semantic annotation
+ \item Easily extensible
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+NeXML\\
+Computer readable, but not very human readable\\
+\includegraphics[width=0.75\textwidth]{/home/ejmctavish/Desktop/Talks/nexml}\\
+\end{frame}
+
+
+\begin{frame}
+ Phylip (sequence data format)\\
+\begin{itemize}
+ \item First line must be two integers: <number of taxa> <number of sites>
+ \item Sequence ID followed by spaces up to 10 char. 
+ \item No duplicate names
+ \item Relaxed phylip up to 250 characters followed by a space
+\end{itemize}
+\includegraphics[width=\textwidth]{/home/ejmctavish/Desktop/Talks/phylip}
+\end{frame}
+
+\begin{frame}
+Phylip interleaved\\
+\includegraphics[height=0.3\textheight]{/home/ejmctavish/Desktop/Talks/phylipinterleaved}\\
+Phylip sequential\\
+\includegraphics[height=0.3\textheight]{/home/ejmctavish/Desktop/Talks/phylipsequential}
+\end{frame}
+
+
+
+\begin{frame}
+Fasta (sequence data format)\\
+\begin{itemize}
+ \item Description line before each sequence starts with (">") symbol in the first column
+\end{itemize}
+\includegraphics[height=0.2\textheight]{/home/ejmctavish/Desktop/Talks/fasta}
+\end{frame}
+
 
 
 %----------Play Break---------------
