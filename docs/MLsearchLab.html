@@ -258,8 +258,11 @@ It isn't easy (or reasonable) to check by eye! And because of different choices 
 <ul>
 <li>On the cluster, use the 'treecompare.py' script to compare the differences between the two ML tree estimates. This script relies on <a href="https://www.dendropy.org/">Dendropy</a>, by Sukumaran and Holder to perform tree comparisons.<br></li>
 
-Check out the Robinson Foulds distances between the Garli and RAxML estimates: 
-using <br>
+Check out the Robinson Foulds distances between the Garli and RAxML estimates using this "treecompare" script.
+<br>
+First you will need to load the python modules using <br>
+<span class="command">source /courses/ejmctavish/qsb244/venv-244/bin/activate</span><br>
+
 <span class="command">python treecompare.py RAxML_bestTree.rax01 &lsaquo;treefile format&rsaquo; garli_run1.best.tre &lsaquo;treefile format&rsaquo;</span>,<br>
 (open the tree files in your text editor to figure out what the tree file formats are for these two trees.) <br>
 
