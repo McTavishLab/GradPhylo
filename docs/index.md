@@ -28,7 +28,7 @@ New materials will be posted here, material from when this was taught in 2017 at
 [Week 2 slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/inference.pdf) Inferring trees from data  
 [Intro  to HPC slides](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_comp.pdf) Intro to computation  
 [Likelihood 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/likelihood1.pdf) Intro to likelihood  
-[Likelihood 2, models tree search](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/ML_search.pdf) ML tree search  
+[Maximum likelihood tree search](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/ML_search.pdf) ML tree search  
 [ML search lab](https://mctavishlab.github.io/GradPhylo/MLsearchLab.html) ML search lab    
 
 

@@ -67,7 +67,7 @@ p {
 <li>Download the package of files used in this activity: <a href="https://mctavishlab.github.io/GradPhylo/assignments/MLsearch.2017.zip">MLsearch.WH2017.zip</a><br>
 Login to the cluster and type</p>
 <p>wget https://mctavishlab.github.io/assets/MLsearch.WH2017.zip
-</li><li>Uncompress the zip file using "<span class="command">unzip MLsearch.2017.zip</span>"
+</li><li>Uncompress the zip file using "<span class="command">unzip MLsearch.WH2017.zip</span>"
 </ul>
 <ul><b>You will need to make edits to the configuration file and command line arguments in most cases.</b>
 </ul>
@@ -81,7 +81,7 @@ This is a hard phylogenetic problem, and phylogenetic estimates are less repeata
 
 <p>We will run several analyses using two different software tools for estimating Maximum Likelihood phylogenies, Garli and RAxML
 </p>
-<strong>ON THE MERCED CLUSTER: Don't try interactive analyses unless you are using 'srun', e.g. 'srun -c 3 --pty /bin/bash' to login to a node. You can try running these examples either interactively or by subitting to fastq.</strong><br>
+<strong>ON THE MERCED CLUSTER: Don't try interactive analyses unless you are using 'srun', e.g. 'srun -c 3 --pty /bin/bash' to login to a node. You can try running these examples either interactively or by submitting as jobs to fastq.</strong><br>
 <p>
 <strong>Garli</strong><br>
 GARLI reads all of its settings from a configuration file.  By default it looks for a file named <span class="file">garli.conf</span>, but other configuration files can be specified as a command line argument after the executable (e.g., if the executable were named <span class="file">garli</span>, you would type "<span class="command">garli myconfig.conf</span>"). Note that most of the settings typically do not need to be changed from their default values, at least for exploratory runs. We will only experiment with some of the interesting settings in this demo, but detailed discussions of all settings can be found on the <a href="https://molevol.mbl.edu/index.php/Garli_wiki" target="_new">support web site</a>.</p>
