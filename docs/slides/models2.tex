@@ -1,0 +1,108 @@
+\documentclass{beamer}
+\useoutertheme{infolines}
+\usepackage[utf8]{inputenc}
+\usepackage{default}
+%\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\newcommand\redout{\bgroup\markoverwith
+{\textcolor{red}{\rule[.5ex]{2pt}{2pt}}}\ULon}
+\usepackage{xcolor}
+\usepackage{textpos}
+\usepackage{tikz}   
+\usepackage[round]{natbib}
+\bibliographystyle{apalike}
+\usepackage[T1]{fontenc}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\usefonttheme[onlymath]{serif}
+
+%\addtobeamertemplate{frametitle}{}{%
+%\begin{textblock*}{100mm}(.8\textwidth,-1cm)
+%\includegraphics[height=1cm,width=2cm]{opentreelogogrey}
+%\end{textblock*}}
+
+\useinnertheme{rectangles}
+\usetheme{Copenhagen}
+\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{footline}{}
+
+\title[*]{Phylogenetic likelihood and models}
+\author[*]{Emily Jane McTavish}
+\institute[*]{
+Life and Environmental Sciences\\
+University of California, Merced\\
+\texttt{ejmctavish@ucmerced.edu, twitter:snacktavish}\\
+}
+\date{}
+\setbeamertemplate{itemize items}[triangle]
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+(With thanks to Mark Holder and Paul Lewis for slides) 
+\end{frame}
+
+
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=35]{../../../Lewis/Likelihood2017.pdf}
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=7-8]{../../../markphylo/parsSummaryModels.pdf}
+
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=36-40]{../../../Lewis/Likelihood2017.pdf}
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=9]{../../../markphylo/parsSummaryModels.pdf}
+
+\begin{frame}
+Poisson distibution can be used to explain statistical regularities of rare events\\
+$P\left( \textrm{k events in interval} \right) = \frac{{e^{ - \nu } \nu ^k }}{{k!}}$
+\begin{itemize}
+ \item $\nu$ is the average number of events per interval (rate times time)
+ \item $e$ is the number 2.71828... (Euler's number) the base of the natural logarithms
+ \item $k$ takes values 0, 1, 2, ...
+ \item $k! = k * \left(k - 1\right) * \left(k - 2\right) * … * 2 * 1$ is the factorial of k.
+\end{itemize}
+\tiny{from wikipedia}
+\end{frame}
+
+\begin{frame}
+$P\left( \textrm{k events in interval} \right) = \frac{{e^{ - \nu } \nu ^k }}{{k!}}$
+
+$P\left( \textrm{0 events} \right) = \frac{{e^{ - \nu } \nu ^0 }}{{0!}} = e^ {- \nu} = e^{- \mu t}$
+
+$P\left( \textrm{>= 1 events} \right) = 1- e^{- \mu t}$
+
+\end{frame}
+
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=41-49]{../../../Lewis/Likelihood2017.pdf}
+
+
+
+%\setbeamercolor{background canvas}{bg=}
+%\includepdf[pages=20-22]{../../../markphylo/parsSummaryModels.pdf}
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=52-75]{../../../Lewis/Likelihood2017.pdf}
+
+\begin{frame}
+Iqtree tutorial\end{frame}
+
+%\setbeamercolor{background canvas}{bg=}
+%\includepdf[pages=24-33]{../../../markphylo/parsSummaryModels.pdf}
+
+
+
+
+
+
+
+
+\end{document}

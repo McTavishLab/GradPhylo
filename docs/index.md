@@ -30,7 +30,8 @@ New materials will be posted here, material from when this was taught in 2017 at
 [Likelihood 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/likelihood1.pdf) Intro to likelihood  
 [Maximum likelihood tree search](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/ML_search.pdf) ML tree search  
 [ML search lab](https://mctavishlab.github.io/GradPhylo/MLsearchLab.html) ML search lab    
-
+[Models](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/models2.pdf) Models  
+[IQTree beginner tutorial](http://www.iqtree.org/doc/Tutorial) IQtree tutorial  
 
 
 
