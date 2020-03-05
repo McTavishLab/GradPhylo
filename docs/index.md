@@ -32,7 +32,7 @@ New materials will be posted here, material from when this was taught in 2017 at
 [ML search lab](https://mctavishlab.github.io/GradPhylo/MLsearchLab.html) ML search lab    
 [Models](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/models2.pdf) Models  
 [IQTree beginner tutorial](http://www.iqtree.org/doc/Tutorial) IQtree tutorial  
-
+[Bayesian inference intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/BayesIntro.pdf) Bayesian inference intro  
 
 
 
