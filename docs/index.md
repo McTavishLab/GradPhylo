@@ -33,6 +33,7 @@ New materials will be posted here, material from when this was taught in 2017 at
 [Models](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/models2.pdf) Models  
 [IQTree beginner tutorial](http://www.iqtree.org/doc/Tutorial) IQtree tutorial  
 [Bayesian inference intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/BayesIntro.pdf) Bayesian inference intro  
+[Bayesian inference intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Bayes2.pdf) Bayesian inference intro  
 
 
 
