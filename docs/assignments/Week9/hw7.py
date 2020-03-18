@@ -14,7 +14,7 @@ def logPosteriorKernel(v):
 
 v = float(sys.argv[1])
 
-print 'v = %12.5f'   %v
-print 'log(likelihood) = %12.5f' % logLikelihood(v)
-print 'log(prior) = %12.5f' % logPrior(v)
-print 'log(posterior kernel) = %12.5f' % logPosteriorKernel(v)
+print('v = %12.5f'   %v)
+print('log(likelihood) = %12.5f' % logLikelihood(v))
+print('log(prior) = %12.5f' % logPrior(v))
+print('log(posterior kernel) = %12.5f' % logPosteriorKernel(v))
