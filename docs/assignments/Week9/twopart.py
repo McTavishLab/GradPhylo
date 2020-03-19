@@ -5,16 +5,16 @@ v = 0.005
 
 
 def logLikelihood(v):
-logsame = 2.0*math.log(0.25) + math.log(1.0 + 3.0*math.exp(-4.0*v/3.0))
-logdiff = 2.0*math.log(0.25) + math.log(1.0 - math.exp(-4.0*v/3.0))
-return (2.0*logdiff + 30.0*logsame)
+    logsame = 2.0*math.log(0.25) + math.log(1.0 + 3.0*math.exp(-4.0*v/3.0))
+    logdiff = 2.0*math.log(0.25) + math.log(1.0 - math.exp(-4.0*v/3.0))
+    return (2.0*logdiff + 30.0*logsame)
 
 def logPrior(v):
-exponential_rate = 100.0
-return (math.log(exponential_rate) - v*exponential_rate)
+    exponential_rate = 100.0
+    return (math.log(exponential_rate) - v*exponential_rate)
 
 def logPosteriorKernel(v):
-return (logLikelihood(v) + logPrior(v))
+    return (logLikelihood(v) + logPrior(v))
 
 
 
