@@ -35,8 +35,8 @@ New materials will be posted here, material from when this was taught in 2017 at
 [Bayesian inference intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/BayesIntro.pdf) Bayesian inference intro  
 [Bayesian inference II](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Bayes2.pdf) Bayesian inference 2  
 [MCMC assignment from Paul Lewis]( https://hydrodictyon.eeb.uconn.edu/people/plewis/courses/phylogenetics/homeworks/2020/hw7.pdf) MCMC assignment  
-[MrBayesLab](http://hydrodictyon.eeb.uconn.edu/eebedia/index.php/Phylogenetics:_MrBayes_Lab) Mr Bayes tutorial
-[Dating Trees](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Dates.pdf) Dating Trees
+[MrBayesLab](http://hydrodictyon.eeb.uconn.edu/eebedia/index.php/Phylogenetics:_MrBayes_Lab) Mr Bayes tutorial  
+[Dating Trees](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Dates.pdf) Dating Trees  
 [OPTIONAL Computer lab on BEAST 2: introduction](https://taming-the-beast.github.io/tutorials/Introduction-to-BEAST2/)    
 [OPTIONAL Computer lab on BEAST 2: divergence time estimation](https://taming-the-beast.github.io/tutorials/FBD-tutorial/) 
 
