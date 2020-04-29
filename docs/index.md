@@ -41,7 +41,7 @@ New materials will be posted here, material from when this was taught in 2017 at
 [OPTIONAL Computer lab on BEAST 2: divergence time estimation](https://taming-the-beast.github.io/tutorials/FBD-tutorial/) 
 [Reproducibility Guest Lecture by Luna Luisa Sanchez Reyes](https://lunasare.github.io/slides/reproducibility-2020-04-15#1)  
 [Genomic Phylogenetics](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Genomics.pdf)  
-[Genomic Phylogenetics](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/GeneTreeSppTree.pdf)  
+[Gene Tree Spp Tree](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/GeneTreeSppTree.pdf)  
 
 
 ---
