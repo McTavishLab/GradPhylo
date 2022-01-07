@@ -44,6 +44,11 @@ layout: workshop
   <div class="row">
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
+       Option 1. WSL
+      <a href=" https://docs.microsoft.com/en-us/windows/wsl/install">Windows Subsystem for Linux </a>
+     <br>
+      Option 2. GitBash
+      <br>
       <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
       <ol>
         <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
