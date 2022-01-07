@@ -18,7 +18,7 @@ title: Bayesian Phylogenetic Inference with MrBayes
 # Resources
 
 -   The data files for the lab can be found [here](http://phylo.bio.ku.edu/sisg2014/algaemb.nex).
--   MrBayes is installed on my lab's workstations and is available using the command ``mb``.
+-   MrBayes is installed on the cluster and is available using the command ``mb``.
 -   You can also download MrBayes for your personal machine from [here](http://nbisweden.github.io/MrBayes/).
 
 
