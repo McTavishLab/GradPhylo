@@ -1,0 +1,237 @@
+\documentclass{beamer}
+\useoutertheme{infolines}
+\usepackage[utf8]{inputenc}
+\usepackage{default}
+%\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\newcommand\redout{\bgroup\markoverwith
+{\textcolor{red}{\rule[.5ex]{2pt}{2pt}}}\ULon}
+\usepackage{xcolor}
+\usepackage{textpos}
+\usepackage{tikz}   
+\usepackage[round]{natbib}
+\bibliographystyle{apalike}
+\usepackage[T1]{fontenc}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+
+
+%\addtobeamertemplate{frametitle}{}{%
+%\begin{textblock*}{100mm}(.8\textwidth,-1cm)
+%\includegraphics[height=1cm,width=2cm]{opentreelogogrey}
+%\end{textblock*}}
+
+\useinnertheme{rectangles}
+\usetheme{Copenhagen}
+\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{footline}{}
+
+\title[*]{Tree formats and vocabulary}
+\author[*]{Emily Jane McTavish}
+\institute[*]{
+Life and Environmental Sciences\\
+University of California, Merced\\
+\texttt{ejmctavish@ucmerced.edu, twitter:snacktavish}\\
+}
+\date{}
+\setbeamertemplate{itemize items}[triangle]
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+(With thanks to Mark Holder, Paul Lewis, Joe Felsenstein, and David Hillis for slides) 
+\end{frame}
+
+
+
+\begin{frame}
+\begin{center}
+ \Large{Phylogenies describe shared ancestry\\
+and\\
+inform our understanding of evolutionary processes}
+\end{center}
+\end{frame}
+
+
+%-----comp meth examples------
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=15-20]{TreTermsBAK.pdf}
+
+
+\begin{frame}
+\begin{centering}
+\includegraphics[width=\textwidth]{xkcdherp}
+\end{centering}\\
+https://xkcd.com/867/
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=22]{TreTermsBAK.pdf}
+
+\begin{frame}
+\begin{centering}
+\includegraphics[height=0.8\textheight]{poly}
+\end{centering}\\
+from wikipedia
+\end{frame}
+
+
+\begin{frame}
+more terms:
+\begin{itemize}
+ \item sister taxa: taxa or monophyletic groups which share a most recent common ancestor
+ \item outgroup: taxon that is determined \emph{a priori} to be sister to all other taxa in the analysis. Used for rooting tree
+\end{itemize}
+
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=25-26]{TreTermsBAK.pdf}
+
+\begin{frame}
+Splits\\
+\begin{itemize}
+ \item It is useful to think of unrooted trees in terms of 'splits'
+ \item Each branch in an unrootred tree splits the taxa into two groups.
+ \item Membership in those groups can be denoted by ** vs .. 
+ \item e.g. a split between 1+2 and 3+4 can be summarized as
+ \item 1234
+ \item ** ..
+\end{itemize}
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=28]{TreTermsBAK.pdf}
+
+%-----Digression into newick format
+
+\begin{frame}
+ \center{\Large a brief digression into newick tree file format}
+\end{frame}
+
+
+\begin{frame}
+\begin{centering}
+\includegraphics[height=0.4\textheight]{/home/ejmctavish/Desktop/Talks/newicklobster}
+\end{centering}\\
+ Newick’s Lobster House was the site of an historic 1986 meeting 
+ at which a standard was devised for storing descriptions of 
+ phylogenetic trees as strings. 
+ (Photo from Paul Lewis)
+\end{frame}
+
+
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=31-43]{TreTermsBAK.pdf}
+
+
+
+
+\begin{frame}
+Newick\\
+\begin{itemize}
+ \item Parenthetical tree format
+ \item Rooted vs. unrooted trees are not differentiated
+ \item Some programs interpret polytomy at root as `unrooted
+ \item Branches and nodes not well differentiated
+ \item A name can contain and characters except blanks, colons, semicolons, parentheses, and square brackets
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+Nexus\\
+\begin{itemize}
+ \item Starts with \#nexus
+ \item Can contain blocks of alignments, trees, commands, and more!
+ \item Blocks between `begin' and `end'
+ \item Trees in Newick format, prepended with [\&U] unrooted or [\&R] rooted
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+Nexus\\
+\includegraphics[height=0.3\textheight]{/home/ejmctavish/Desktop/Talks/nexustaxa}\\
+\includegraphics[height=0.3\textheight]{/home/ejmctavish/Desktop/Talks/nexusdata}\\
+\url{http://hydrodictyon.eeb.uconn.edu/eebedia/index.php/Phylogenetics:_NEXUS_Format}
+\end{frame}
+\begin{frame}
+Nexus\\
+\includegraphics[height=0.3\textheight]{/home/ejmctavish/Desktop/Talks/nexustrees}\\
+\includegraphics[height=0.2\textheight]{/home/ejmctavish/Desktop/Talks/nexussets}\\
+\url{http://hydrodictyon.eeb.uconn.edu/eebedia/index.php/Phylogenetics:_NEXUS_Format}
+\end{frame}
+
+
+\begin{frame}
+NeXML\\
+\begin{itemize}
+ \item Phylogenetic data as XML
+ \item Can capture all information from Nexus
+ \item Full semantic annotation
+ \item Easily extensible
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+NeXML\\
+Computer readable, but not very human readable\\
+\includegraphics[width=0.75\textwidth]{/home/ejmctavish/Desktop/Talks/nexml}\\
+\end{frame}
+
+
+\begin{frame}
+ Phylip (sequence data format)\\
+\begin{itemize}
+ \item First line must be two integers: <number of taxa> <number of sites>
+ \item Sequence ID followed by spaces up to 10 char. 
+ \item No duplicate names
+ \item Relaxed phylip up to 250 characters followed by a space
+\end{itemize}
+\includegraphics[width=\textwidth]{/home/ejmctavish/Desktop/Talks/phylip}
+\end{frame}
+
+\begin{frame}
+Phylip interleaved\\
+\includegraphics[height=0.3\textheight]{/home/ejmctavish/Desktop/Talks/phylipinterleaved}\\
+Phylip sequential\\
+\includegraphics[height=0.3\textheight]{/home/ejmctavish/Desktop/Talks/phylipsequential}
+\end{frame}
+
+
+
+\begin{frame}
+Fasta (sequence data format)\\
+\begin{itemize}
+ \item Description line before each sequence starts with (">") symbol in the first column
+\end{itemize}
+\includegraphics[height=0.2\textheight]{/home/ejmctavish/Desktop/Talks/fasta}
+\end{frame}
+
+
+
+%----------Play Break---------------
+\begin{frame}
+\frametitle{DIY}
+Create a newick tree file in your text editor with the content:
+\texttt{(((C,(D,E)),(F,G),A),B);}\\
+Save it as 'example.tre'.\\
+\begin{itemize}
+ \item Draw the tree by hand
+ \item Write down all the splits in ..** format.
+ \item Load the tree in a tree viewer (e.g. phylo.io, figtree). Re-root  the tree. What rootings make the following true? Which cannot be true?
+ \begin{itemize}
+ \item A is more closely related to G than it is to C
+ \item (C,D,E) is sister to (A,B,F,G)
+ \item (C,D) is sister to (A,B,E,F,G)
+ \item (C,D,E) is a paraphyletic group
+ \item (C,D,E) is a monophyletic group
+ \item (A,B,C) is a monophyletic group
+ \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}

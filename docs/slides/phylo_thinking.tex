@@ -1,0 +1,139 @@
+\documentclass{beamer}
+\useoutertheme{infolines}
+\usepackage[utf8]{inputenc}
+\usepackage{default}
+%\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\newcommand\redout{\bgroup\markoverwith
+{\textcolor{red}{\rule[.5ex]{2pt}{2pt}}}\ULon}
+\usepackage{xcolor}
+\usepackage{textpos}
+\usepackage{tikz}   
+\usepackage[round]{natbib}
+\bibliographystyle{apalike}
+\usepackage[T1]{fontenc}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+
+
+%\addtobeamertemplate{frametitle}{}{%
+%\begin{textblock*}{100mm}(.8\textwidth,-1cm)
+%\includegraphics[height=1cm,width=2cm]{opentreelogogrey}
+%\end{textblock*}}
+
+\useinnertheme{rectangles}
+\usetheme{Copenhagen}
+\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{footline}{}
+
+\title[*]{Phylogenetic terminology and applications}
+\author[*]{Emily Jane McTavish}
+\institute[*]{
+Life and Environmental Sciences\\
+University of California, Merced\\
+\texttt{ejmctavish@ucmerced.edu, twitter:snacktavish}\\
+}
+\date{}
+\setbeamertemplate{itemize items}[triangle]
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+(With thanks to Mark Holder, Paul Lewis, Joe Felsenstein, and David Hillis for slides) 
+\end{frame}
+
+
+
+\begin{frame}
+\begin{center}
+ \Large{Phylogenies describe shared ancestry\\
+and\\
+inform our understanding of evolutionary processes}
+\end{center}
+\end{frame}
+
+
+%-----comp meth examples------
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=3-14]{TreTermsBAK.pdf}
+
+\begin{frame}
+Epidemiology\\
+ \includegraphics[width=\textwidth]{/home/ejmctavish/Desktop/Talks/nextstrain_covid}
+ \url{https://nextstrain.org/ncov/gisaid/global} (deep dive next week)
+\end{frame}
+
+
+%-----------------
+\begin{frame}
+Phylogenies can reveal suprising patterns
+ \includegraphics[width=0.75\textwidth]{butterflycut}
+\end{frame}
+
+\begin{frame}
+Phylogenies can reveal suprising patterns
+ \includegraphics[width=\textwidth]{butterfly}
+ \citep{joron_chromosomal_2011}
+\end{frame}
+
+
+
+\begin{frame}
+What evolutionary processes can drive these patterns?
+\begin{itemize}
+ \item Convergence
+ \item Horizontal gene transfer
+ \item Incomplete lineage sorting
+ \item ?
+\end{itemize}
+\pause
+We will discuss how to recognize and (try to) differentiate these processes.
+\end{frame}
+
+
+
+\begin{frame}
+\textit{The challenge of phylogenetics:}\\
+The tree is real. There is some true past history that happened!\\
+\medskip
+\pause
+How do we find out what that history was?
+\end{frame}
+
+
+\begin{frame}
+Estimating a tree from character data\\
+Tree construction:
+\begin{itemize}
+ \item strictly algorithmic approaches - use a “recipe” to construct a tree
+  \item optimality based approaches - choose a way to “score” a trees and then search for the tree that has the best score.
+\end{itemize}
+
+Expressing support for aspects of the tree:
+\begin{itemize}
+ \item  bootstrapping,
+ \item testing competing trees against each other,
+ \item posterior probabilities (in Bayesian approaches).
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+Different data can drive different conclusions
+ \includegraphics[width=\textwidth]{batspptree}\\
+Species relationships between echolocating and nonecholocating bats (after Teeling 2009).
+Left: inferences from DNA sequence data.\\
+Right: traditional species relationships inferred from morphological characters (and limited sequence data).
+\citep{hahn_irrational_2016}
+\end{frame}
+
+
+\appendix
+\begin{frame}[allowframebreaks]
+ \bibliography{GradPhylo}
+\end{frame}
+
+
+
+\end{document}
