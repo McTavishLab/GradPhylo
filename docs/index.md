@@ -22,9 +22,9 @@ Please complete setup instructions listed at [https://mctavishlab.github.io/Grad
 New materials will be posted here, material from when this was taught in 2017 at [https://mctavishlab.github.io/GradPhylo/gp2017](https://mctavishlab.github.io/GradPhylo/gp2017)
 
 
-[Class intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_phylo.pdf)
-[Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/phylo_thinking.pdf)
-[Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf)
+[Class intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_phylo.pdf) 
+[Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/phylo_thinking.pdf) 
+[Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf) 
 
 
 ---
