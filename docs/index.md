@@ -30,10 +30,10 @@ Jan 20, 2020
 Jan 27, 2020  
 [Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/phylo_thinking.pdf)  
 [Inferring trees from data](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/inference.pdf)  
-[Lab: NextStrain](https://github.com/McTavishLab/GradPhylo/blob/master/docs/labs/UnderstandingCOVIDNextstrain.pdf)
+[Lab: NextStrain](https://github.com/McTavishLab/GradPhylo/blob/master/docs/labs/UnderstandingCOVIDNextstrain.pdf)  
 
 Feb 3, 2020  
-[Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf)
+[Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf)  
 [Intro computation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_comp.pdf)
 
 
