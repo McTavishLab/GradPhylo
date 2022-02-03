@@ -22,9 +22,19 @@ Please complete setup instructions listed at [https://mctavishlab.github.io/Grad
 New materials will be posted here, material from when this was taught in 2017 at [https://mctavishlab.github.io/GradPhylo/gp2017](https://mctavishlab.github.io/GradPhylo/gp2017)
 
 
+Jan 20, 2020  
 [Class intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_phylo.pdf)  
+[Tree thinking quiz 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/TreeThinkingQuiz/TreeThinkingQuiz1.pdf)  
+[Tree thinking quiz 2](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/TreeThinkingQuiz/TreeThinkingQuiz2.pdf)  
+
+Jan 27, 2020  
 [Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/phylo_thinking.pdf)  
-[Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf)  
+[Inferring trees from data](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/inference.pdf)  
+[Lab: NextStrain](https://github.com/McTavishLab/GradPhylo/blob/master/docs/labs/UnderstandingCOVIDNextstrain.pdf)
+
+Feb 3, 2020  
+[Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf)
+[Intro computation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_comp.pdf)
 
 
 ---
