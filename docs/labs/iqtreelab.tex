@@ -1,0 +1,49 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usetheme{default}
+
+\begin{document}
+
+\begin{frame}
+\textbf{IqTree lab}\\
+You can install on your on machine following instructions at http://www.iqtree.org
+or run on the cluster.
+
+\texttt{mkdir iqtree\_lab}\\
+\texttt{cd iqtree\_lab}\\
+\texttt{cp -r /qsb/ejmctavish/qsb244/iqtree\_data/* .}\\
+
+\medskip
+For interactive analyses: \textbf{do not run on the login node!!}
+\texttt{srun -p qsb.q --pty /bin/bash}
+
+\medskip
+Do the iqtree tutorial through section ``Binary, morphological and SNP data'': 
+http://www.iqtree.org/doc/Tutorial
+ 
+\end{frame}
+
+\begin{frame}
+ \textbf{Homework:}\\
+     \begin{itemize}
+      \item[1] What format is example.phy.treefile?
+      \item[2] Look at the report file example.phy.iqtree.
+      What is the best-fit model? What do you know about this model?
+      
+     \end{itemize}
+
+        
+
+        What is the best-fit model? What do you know about this model?
+
+        Visualise the tree turtle.fa.treefile in FigTree.
+
+        Compare the tree with the published tree (Chiari et al., 2012). Are they the same or different?
+
+        If different, where are the difference(s)?
+
+        Look at the boostrap supports. Which branch(es) have a low support?
+\end{frame}
+
+\end{document}
