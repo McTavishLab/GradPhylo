@@ -37,5 +37,12 @@ Feb 3, 2022
 [Intro computation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_comp.pdf)  
 
 
+Feb 10, 2022  
+Guest lecture on rooting the animal tree by [Melissa DeBiasse](https://melissadebiasse.weebly.com/)  
+[Splits HW](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/Splits/SplitsHW.pdf)
+
+Feb 17, 2022  
+[igtree lab](https://github.com/McTavishLab/GradPhylo/blob/master/docs/labs/iqtreelab.pdf)
+
 ---
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
