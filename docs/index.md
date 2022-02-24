@@ -45,5 +45,10 @@ Feb 17, 2022
 [Likelihood 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/likelihood1.pdf)  
 [Lab: iqtree lab](https://github.com/McTavishLab/GradPhylo/blob/master/docs/labs/iqtreelab.pdf)  
 
+
+Feb 24, 2022  
+[Likelihood 2](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/likelihood2.pdf)  
+[HW: Branch length exercise](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/BrLenHW.pdf)  
+
 ---
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
