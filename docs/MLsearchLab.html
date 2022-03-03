@@ -84,7 +84,7 @@ This is a hard phylogenetic problem, and phylogenetic estimates are less repeata
 <strong>ON THE MERCED CLUSTER: Don't try interactive analyses unless you are using 'srun', e.g. 'srun -q qsb.q --pty /bin/bash' to login to a node. You can try running these examples either interactively or by submitting as jobs to fastq.</strong><br>
 <p>
 <strong>Garli</strong><br>
-Garli is not under active development, and does not make sense for running analyses on large-size current data stes, but it tracks a lot of infomration about the tree search process, that make it very helpful for understanding maximum likelihood tree searching.
+Garli is not under active development, and does not make sense for running analyses on large-size current data sets, but it tracks a lot of information about the tree search process, that make it very helpful for understanding maximum likelihood tree searching.
 GARLI reads all of its settings from a configuration file.  By default it looks for a file named <span class="file">garli.conf</span>, but other configuration files can be specified as a command line argument after the executable (e.g., if the executable were named <span class="file">garli</span>, you would type "<span class="command">garli myconfig.conf</span>"). Note that most of the settings typically do not need to be changed from their default values, at least for exploratory runs. We will only experiment with some of the interesting settings in this demo, but detailed discussions of all settings can be found on the <a href="https://molevol.mbl.edu/index.php/Garli_wiki" target="_new">support web site</a>.</p>
 
 <p>
@@ -265,7 +265,7 @@ First you will need to load the python modules for tree comparison using <br>
 <span class="command">source /qsb/ejmctavish/qsb244/venv-244/bin/activate</span><br>
 
 <span class="command">python treecompare.py RAxML_bestTree.rax01 &lsaquo;treefile format&rsaquo; garli_run1.best.tre &lsaquo;treefile format&rsaquo;</span>,<br>
-(open the tree files in your text editor to figure out what the tree file formats are for these two trees.) <br>
+(open the tree files in your text editor to figure out what the tree file formats are for these two trees. For a reminder about formats, see <a href="https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf">Tree formats and terms</a> <br>
 
 </li><li><strong>HW 3</strong> What are the RF and weighted RF distances between your two best tree estimates?
 </li>
