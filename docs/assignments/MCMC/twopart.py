@@ -29,8 +29,12 @@ print('log(posterior kernel) = %12.5f' % logPosteriorKernel(v))
 #---------generate random numbers-------------
 
 import random
-u1 = random.choice(range(10000))/10000
+u1 = random.random()
 print('u1 = %12.5f' %u1)
 
-logu2 = math.log(random.choice(range(10000))/10000)
+u2 = random.random()
+logu2 = math.log(u2)
+print('u2 = %12.5f' %u2)
+
+
 print('log(u2) = %12.5f' %logu2)
