@@ -59,10 +59,13 @@ March 3, 2022
 March 10, 2022  
 [Intro To Bayes](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/BayesIntro.pdf)  
 
-
-
 March 17, 2022  
 [Bayesian Phylogenetics](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Bayes2.pdf)  
+
+March 31, 2022  
+[Applied Bayesian Phylogenetics](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/AppliedBayes.pdf)  
+[Intro To BEAST](https://taming-the-beast.org/tutorials/Introduction-to-BEAST2/)  
+
 
 ---
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
