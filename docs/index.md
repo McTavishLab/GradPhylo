@@ -79,7 +79,7 @@ Optional tutorials:
 [StarBeast2](https://taming-the-beast.org/tutorials/species-tree-clocks/)  
 
 April 21, 2022  
-[Datelife](datelife.opentreeoflife.org)  
+[Datelife](https://github.com/LunaSare/r_datelife_tutorial/blob/main/datelife_class.pdf)  
 
 
 April 28, 2022  
