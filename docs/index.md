@@ -85,5 +85,9 @@ April 21, 2022
 April 28, 2022  
 [Data set assembly](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Genomics_2022.pdf)  
 
+May 5, 2022  
+[Open Tree of Life and GBIF](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/OT_intro_GBIF_demo.pdf)  
+[Demo link](https://github.com/McTavishLab/jupyter_OpenTree_tutorials)    
+[Merced Vernal Pools and Grassland Reserve](https://ucnrs.org/reserves/merced-vernal-pools-and-grassland-reserve/)  
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
