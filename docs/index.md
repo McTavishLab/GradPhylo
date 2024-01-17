@@ -3,23 +3,23 @@ title: README
 layout: minimal
 ---
 
-# Graduate Phylogenetics - Spring 2022
+# Graduate Phylogenetics - Spring 2024
 
 ## University of California, Merced -- QSB/ES 244
 
 A graduate course covering phylogenetic methods: theory, statistics and practice.  
-[Syllabus](https://github.com/McTavishLab/GradPhylo/raw/master/docs/QSB_ES_244_syllabus_2020.pdf)
+[Syllabus](https://github.com/McTavishLab/GradPhylo/raw/master/docs/QSB_ES_244_syllabus_2024.pdf)
 
 **Instructor:**  [Emily Jane McTavish](http://McTavishLab.github.io/)
 
-**Time/Location:** Lecture/Lab, Thursday 9 AM - 12 PM
+**Time/Location:** Lecture/Lab, Wednesday 9 AM - 12 PM, Granite Pass 115
 
 **Web View:** [https://mctavishlab.github.io/GradPhylo](https://mctavishlab.github.io/GradPhylo)
 
 
 Please complete setup instructions listed at [https://mctavishlab.github.io/GradPhylo/installs](https://mctavishlab.github.io/GradPhylo/installs)
 
-New materials will be posted here, material from when this was taught in 2017 at [https://mctavishlab.github.io/GradPhylo/gp2017](https://mctavishlab.github.io/GradPhylo/gp2017)
+New materials will be posted here, material from when this was taught in 2022 at [https://mctavishlab.github.io/GradPhylo/gp2017](https://mctavishlab.github.io/GradPhylo/gp2022)
 
 
 Jan 20, 2022  
