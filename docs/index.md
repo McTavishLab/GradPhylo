@@ -26,7 +26,7 @@ Jan 17, 2024
 [Class intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_phylo.pdf)  
 [Tree thinking quiz 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/TreeThinkingQuiz/TreeThinkingQuiz1.pdf)  
 [Tree thinking quiz 2](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/TreeThinkingQuiz/TreeThinkingQuiz2.pdf)  
-[Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf) 
+[Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf)  
 [Intro to computation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_comp.pdf)  
 
 

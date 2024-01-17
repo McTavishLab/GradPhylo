@@ -21,9 +21,6 @@ layout: workshop
   </p>
     Install a Treeviewer
     <a href="http://tree.bio.ed.ac.uk/software/figtree/"> Figtree</a><br>
-
-    Install Paup <a href="http://phylosolutions.com/paup-test/">Paup</a>, whcih you will use for homeworks and exercies.
-    (we will add other phylogenetics software as the course proceeds)
  </div>
 ------------------------------------------------------------------------------------------------------------
 <p>
