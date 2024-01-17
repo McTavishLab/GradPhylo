@@ -26,6 +26,7 @@ Jan 17, 2024
 [Class intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_phylo.pdf)  
 [Tree thinking quiz 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/TreeThinkingQuiz/TreeThinkingQuiz1.pdf)  
 [Tree thinking quiz 2](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/TreeThinkingQuiz/TreeThinkingQuiz2.pdf)  
+[Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/phylo_thinking.pdf)  
 [Intro to computation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_comp.pdf)  
 
 
@@ -34,25 +35,25 @@ Jan 24, 2024
 
 
 Jan 31, 2024
-Phylogenetic thinking + Covid
+Covid + Phylogenetic applications
 Lab: NextStrain
 
 
 Feb 7, 2024   
 Inferring trees from data
-[Discussion](http://for-the-love-of-trees.blogspot.com/2016/09/the-ancestors-are-not-among-us.html)
-
 [Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf)  
+[Discussion:](http://for-the-love-of-trees.blogspot.com/2016/09/the-ancestors-are-not-among-us.html)
+
 
 
 Feb 14, 2024  
 Introduction to Likelihood  
 Lab: iqtree lab  
-Paper discussion  
 
 Feb 21, 2024  
 Likelihood continued  
 Lab: Branch length exercise  
+Paper discussion: 
 
 Feb 28, 2024  
 Maximum likelihood tree search  
@@ -60,19 +61,26 @@ Lab: ML search
 
 March 6, 2024  
 Intro To Bayes  
-Paper discussion  
+Paper discussion:  
  
 March 13, 2024  
 Bayesian Phylogenetics  
+Paper discussion: 
 
 March 20, 2024  
 Applied Bayesian Phylogenetics  
+Paper discussion: 
+
 
 April 3, 2022  
 Data set assembly and alignment  
+Paper discussion: 
+
 
 April 10, 2024  
 Dating phylogenies  
+Paper discussion: 
+
 
 April 17, 2024  
 Species Trees  
@@ -81,6 +89,8 @@ Optional tutorials:
 [SVD quartets](http://www.phylosolutions.com/tutorials/ssb2018/svdquartets-tutorial.html)  
 [Beast2](https://taming-the-beast.org/tutorials/StarBeast-Tutorial/)  
 [StarBeast2](https://taming-the-beast.org/tutorials/species-tree-clocks/)  
+Paper discussion: 
+
 
 
 April 24, 2024  
@@ -90,6 +100,8 @@ April 24, 2024
 
 May 1, 2024 
 TBD  
+Paper discussion: 
+
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
