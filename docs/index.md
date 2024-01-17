@@ -22,72 +22,73 @@ Please complete setup instructions listed at [https://mctavishlab.github.io/Grad
 New materials will be posted here, material from when this was taught in 2022 at [https://mctavishlab.github.io/GradPhylo/gp2017](https://mctavishlab.github.io/GradPhylo/gp2022)
 
 
-Jan 20, 2022  
+Jan 17, 2024  
 [Class intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_phylo.pdf)  
 [Tree thinking quiz 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/TreeThinkingQuiz/TreeThinkingQuiz1.pdf)  
 [Tree thinking quiz 2](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/TreeThinkingQuiz/TreeThinkingQuiz2.pdf)  
+[Intro to computation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_comp.pdf)  
 
-Jan 27, 2022  
-[Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/phylo_thinking.pdf)  
-[Inferring trees from data](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/inference.pdf)  
-[Lab: NextStrain](https://github.com/McTavishLab/GradPhylo/blob/master/docs/labs/UnderstandingCOVIDNextstrain.pdf)  
 
-Feb 3, 2022   
+Jan 24, 2024
+[Using the UC Merced HPC](https://ucmerced.github.io/hpc_docs/#/)
+
+
+Jan 31, 2024
+Phylogenetic thinking
+[Discussion](http://for-the-love-of-trees.blogspot.com/2016/09/the-ancestors-are-not-among-us.html)
+Lab: NextStrain
+
+
+Feb 7, 2024   
+Inferring trees from data
 [Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf)  
-[Intro computation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_comp.pdf)  
 
 
-Feb 10, 2022  
-Guest lecture on rooting the animal tree by [Melissa DeBiasse](https://melissadebiasse.weebly.com/)  
-[Splits HW](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/Splits/SplitsHW.pdf)  
+Feb 14, 2024  
+Introduction to Likelihood
+Lab: iqtree lab
+Paper discussion
 
-Feb 17, 2022  
-[Likelihood 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/likelihood1.pdf)  
-[Lab: iqtree lab](https://github.com/McTavishLab/GradPhylo/blob/master/docs/labs/iqtreelab.pdf)  
+Feb 21, 2024  
+Likelihood continued
+Lab: Branch length exercise
 
+Feb 28, 2024  
+Maximum likelihood tree search
+Lab: ML search
 
-Feb 24, 2022  
-[Likelihood 2](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/likelihood2.pdf)  
-[HW: Branch length exercise](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/BrLenHW.pdf)  
+March 6, 2024  
+Intro To Bayes
+Paper discussion
 
+March 13, 2024  
+Bayesian Phylogenetics
 
-March 3, 2022  
-[Maximum likelihood tree search](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/ML_search.pdf)  
-[Lab: ML search](https://mctavishlab.github.io/GradPhylo/MLsearchLab.html)  
+March 20, 2024  
+Applied Bayesian Phylogenetics
 
+April 3, 2022  
+Data set assembly and alignment
 
-March 10, 2022  
-[Intro To Bayes](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/BayesIntro.pdf)  
+April 10, 2024  
+Dating phylogenies
 
-March 17, 2022  
-[Bayesian Phylogenetics](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Bayes2.pdf)  
-
-March 31, 2022  
-[Applied Bayesian Phylogenetics](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/AppliedBayes.pdf)  
-[Intro To BEAST](https://taming-the-beast.org/tutorials/Introduction-to-BEAST2/)  
-
-April 6, 2022  
-[Dating phylogenies](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Dates.pdf)  
-[Time stamped data in BEAST](https://taming-the-beast.org/tutorials/MEP-tutorial/)  
-
-April 14, 2022  
-[Dating phylogenies](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/GeneTreeSppTree.pdf)  
+April 17, 2024  
+Species Trees
 Optional tutorials:  
 [Astral](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md})  
 [SVD quartets](http://www.phylosolutions.com/tutorials/ssb2018/svdquartets-tutorial.html)  
 [Beast2](https://taming-the-beast.org/tutorials/StarBeast-Tutorial/)  
 [StarBeast2](https://taming-the-beast.org/tutorials/species-tree-clocks/)  
 
-April 21, 2022  
-[Datelife](https://github.com/LunaSare/r_datelife_tutorial/blob/main/datelife_class.pdf)  
 
-
-April 28, 2022  
-[Data set assembly](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Genomics_2022.pdf)  
-
-May 5, 2022  
+April 24, 2024  
 [Open Tree of Life and GBIF](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/OT_intro_GBIF_demo.pdf)  
 [Demo link](https://github.com/McTavishLab/jupyter_OpenTree_tutorials)    
 [Merced Vernal Pools and Grassland Reserve](https://ucnrs.org/reserves/merced-vernal-pools-and-grassland-reserve/)  
+
+May 1, 2024 
+TBD  
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
