@@ -26,7 +26,7 @@ Jan 17, 2024
 [Class intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_phylo.pdf)  
 [Tree thinking quiz 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/TreeThinkingQuiz/TreeThinkingQuiz1.pdf)  
 [Tree thinking quiz 2](https://github.com/McTavishLab/GradPhylo/blob/master/docs/assignments/TreeThinkingQuiz/TreeThinkingQuiz2.pdf)  
-[Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/phylo_thinking.pdf)  
+[Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf) 
 [Intro to computation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/intro_comp.pdf)  
 
 
@@ -35,13 +35,13 @@ Jan 24, 2024
 
 
 Jan 31, 2024
+[Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/phylo_thinking.pdf)  
 Covid + Phylogenetic applications
 Lab: NextStrain
 
 
 Feb 7, 2024   
 Inferring trees from data
-[Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf)  
 [Discussion:](http://for-the-love-of-trees.blogspot.com/2016/09/the-ancestors-are-not-among-us.html)
 
 
@@ -97,6 +97,7 @@ April 24, 2024
 [Open Tree of Life and GBIF](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/OT_intro_GBIF_demo.pdf)  
 [Demo link](https://github.com/McTavishLab/jupyter_OpenTree_tutorials)    
 [Merced Vernal Pools and Grassland Reserve](https://ucnrs.org/reserves/merced-vernal-pools-and-grassland-reserve/)  
+Vernal pools walk  
 
 May 1, 2024 
 TBD  
