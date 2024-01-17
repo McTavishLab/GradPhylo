@@ -34,48 +34,49 @@ Jan 24, 2024
 
 
 Jan 31, 2024
-Phylogenetic thinking
-[Discussion](http://for-the-love-of-trees.blogspot.com/2016/09/the-ancestors-are-not-among-us.html)
+Phylogenetic thinking + Covid
 Lab: NextStrain
 
 
 Feb 7, 2024   
 Inferring trees from data
+[Discussion](http://for-the-love-of-trees.blogspot.com/2016/09/the-ancestors-are-not-among-us.html)
+
 [Tree formats and terms](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Tree_formats_and_terms.pdf)  
 
 
 Feb 14, 2024  
-Introduction to Likelihood
-Lab: iqtree lab
-Paper discussion
+Introduction to Likelihood  
+Lab: iqtree lab  
+Paper discussion  
 
 Feb 21, 2024  
-Likelihood continued
-Lab: Branch length exercise
+Likelihood continued  
+Lab: Branch length exercise  
 
 Feb 28, 2024  
-Maximum likelihood tree search
-Lab: ML search
+Maximum likelihood tree search  
+Lab: ML search  
 
 March 6, 2024  
-Intro To Bayes
-Paper discussion
-
+Intro To Bayes  
+Paper discussion  
+ 
 March 13, 2024  
-Bayesian Phylogenetics
+Bayesian Phylogenetics  
 
 March 20, 2024  
-Applied Bayesian Phylogenetics
+Applied Bayesian Phylogenetics  
 
 April 3, 2022  
-Data set assembly and alignment
+Data set assembly and alignment  
 
 April 10, 2024  
-Dating phylogenies
+Dating phylogenies  
 
 April 17, 2024  
-Species Trees
-Optional tutorials:  
+Species Trees  
+Optional tutorials:    
 [Astral](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md})  
 [SVD quartets](http://www.phylosolutions.com/tutorials/ssb2018/svdquartets-tutorial.html)  
 [Beast2](https://taming-the-beast.org/tutorials/StarBeast-Tutorial/)  
