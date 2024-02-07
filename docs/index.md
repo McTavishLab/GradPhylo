@@ -42,9 +42,8 @@ Lab: NextStrain
 
 
 Feb 7, 2024   
-[Likelihood 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/inference_and_likelihood_intro.pdf) 
+[Phylogenetic inference_and_likelihood_intro](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/inference_and_likelihood_intro.pdf)  
 [Lab: iqtree lab](https://github.com/McTavishLab/GradPhylo/blob/master/docs/labs/iqtreelab.pdf)  
-
 
 
 Feb 14, 2024  
