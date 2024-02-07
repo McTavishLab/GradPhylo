@@ -12,11 +12,15 @@ or run on the cluster.
 
 \texttt{mkdir iqtree\_lab}\\
 \texttt{cd iqtree\_lab}\\
-\texttt{cp -r /qsb/ejmctavish/qsb244/iqtree\_data/* .}\\
+\texttt{cp -r /home/ejmctavish/courses/qsb244/iqtree\_data/* .}\\
+\medskip
+To run iqtree add to path or run
+\texttt{/home/ejmctavish/courses/qsb244/bin/iqtree}\\
+
 
 \medskip
-For interactive analyses: \textbf{do not run on the login node!!}
-\texttt{srun -p qsb.q --pty /bin/bash}
+For interactive analyses: \textbf{do not run on the login node!!}\\
+\texttt{srun --pty /bin/bash}
 
 \medskip
 Do the iqtree beginner tutorial: 
@@ -29,15 +33,14 @@ http://www.iqtree.org/doc/Tutorial
 \begin{frame}
 
 \textbf{Homework:}\\
+This input file and exercise were developed by Minh Bui.
 Using the skills you learned in the tutorial, infer a tree for the 'turtle.fa' alignment, select a model, and then and run 1000 UF bootstrap replicates. 
 This file is a subset of the original Turtle data set used to assess the phylogenetic position of Turtle relative to Crocodile and Bird (Chiari et al., 2012 https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-10-65 ).
-This input file and exercise were developed by Minh Bui. 
-
      \begin{itemize}
       \item[1] What commands did you use for your analysis?
-      \item[2] What is the best-fit model? What do you know about this model?
+      \item[2] What is the best-fit model? What does this model mean?
       \item[3] Copy your tree to your laptop, and view it in figtree. Protopterus is the out group. Root your tree and compare it to the published tree (Chiari et al., 2012). Are they the same or different? If different, where are the difference(s)?
-      \item[4] Look at the boostrap supports. What is the support values of the branches that differ?
+      \item[4] Look at the boostrap supports. What are the support values of the branches that differ?
       
       
      \end{itemize}

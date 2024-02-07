@@ -36,53 +36,50 @@ Jan 24, 2024
 
 Jan 31, 2024
 [Phylo thinking](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/phylo_thinking.pdf)  
-Covid + Phylogenetic applications
-Lab: NextStrain
+[Discussion:](http://for-the-love-of-trees.blogspot.com/2016/09/the-ancestors-are-not-among-us.html)
+Covid + Phylogenetic applications  
+Lab: NextStrain  
 
 
 Feb 7, 2024   
-Inferring trees from data
-[Discussion:](http://for-the-love-of-trees.blogspot.com/2016/09/the-ancestors-are-not-among-us.html)
+[Likelihood 1](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/inference_and_likelihood_intro.pdf) 
+[Lab: iqtree lab](https://github.com/McTavishLab/GradPhylo/blob/master/docs/labs/iqtreelab.pdf)  
 
 
 
 Feb 14, 2024  
-Introduction to Likelihood  
-Lab: iqtree lab  
-
-Feb 21, 2024  
 Likelihood continued  
 Lab: Branch length exercise  
 Paper discussion: 
 
-Feb 28, 2024  
+Feb 21, 2024  
 Maximum likelihood tree search  
 Lab: ML search  
 
-March 6, 2024  
+Feb 28, 2024  
 Intro To Bayes  
-Paper discussion:  
- 
-March 13, 2024  
-Bayesian Phylogenetics  
 Paper discussion: 
 
-March 20, 2024  
+March 6, 2024  
+Bayesian Phylogenetics  
+Paper discussion: 
+ 
+March 13, 2024  
 Applied Bayesian Phylogenetics  
 Paper discussion: 
 
 
-April 3, 2022  
+March 20, 2024  
 Data set assembly and alignment  
 Paper discussion: 
 
 
-April 10, 2024  
+April 3, 2022  
 Dating phylogenies  
 Paper discussion: 
 
 
-April 17, 2024  
+April 10, 2024  
 Species Trees  
 Optional tutorials:    
 [Astral](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md})  
@@ -91,13 +88,17 @@ Optional tutorials:
 [StarBeast2](https://taming-the-beast.org/tutorials/species-tree-clocks/)  
 Paper discussion: 
 
+April 17, 2024  
+Vernal pools walk +
+Paper discussion
+
 
 
 April 24, 2024  
 [Open Tree of Life and GBIF](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/OT_intro_GBIF_demo.pdf)  
 [Demo link](https://github.com/McTavishLab/jupyter_OpenTree_tutorials)    
 [Merced Vernal Pools and Grassland Reserve](https://ucnrs.org/reserves/merced-vernal-pools-and-grassland-reserve/)  
-Vernal pools walk  
+
 
 May 1, 2024 
 TBD  
