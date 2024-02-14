@@ -47,12 +47,17 @@ Feb 7, 2024
 
 
 Feb 14, 2024  
-Likelihood continued  
-Lab: Branch length exercise  
-Paper discussion: 
+[More likelihood](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/likelihood2.pdf)  
+Super cool widgets developed by Mark Holder:  
+[Barcharts](http://phylo.bio.ku.edu/mephytis/barcharts.html)  
+[Branch length](http://phylo.bio.ku.edu/mephytis/brlen-opt.html)  
+[Optimization](http://phylo.bio.ku.edu/mephytis/tree-opt.html)  
+
+
 
 Feb 21, 2024  
-Maximum likelihood tree search  
+Maximum likelihood tree search  and models
+[Dire Wolf discussion paper](https://www.nature.com/articles/s41586-020-03082-x)
 Lab: ML search  
 
 Feb 28, 2024  
