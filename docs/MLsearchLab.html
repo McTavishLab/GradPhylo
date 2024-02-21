@@ -64,7 +64,7 @@ p {
 <h4 class="heading" id="gettingstarted">getting started</h4>
 <p>
 <ul>
-<li>Download the package of files used in this activity: <a href="https://mctavishlab.github.io/GradPhylo/assignments/MLsearch.2017.zip">MLsearch.WH2017.zip</a><br>
+<li>Download the package of files used in this activity: <a href="https://mctavishlab.github.io/assets/MLsearch.WH2017.zip">MLsearch.WH2017.zip</a><br>
 Login to the cluster and type</p>
 <p>wget https://mctavishlab.github.io/assets/MLsearch.WH2017.zip
 </li><li>Uncompress the zip file using "<span class="command">unzip MLsearch.WH2017.zip</span>"
@@ -85,7 +85,7 @@ This is a hard phylogenetic problem, and phylogenetic estimates are less repeata
 <p>
 <strong>Garli</strong><br>
 Garli is not under active development, and does not make sense for running analyses on large-size current data sets, but it tracks a lot of information about the tree search process, that make it very helpful for understanding maximum likelihood tree searching.
-GARLI reads all of its settings from a configuration file.  By default it looks for a file named <span class="file">garli.conf</span>, but other configuration files can be specified as a command line argument after the executable (e.g., if the executable were named <span class="file">garli</span>, you would type "<span class="command">garli myconfig.conf</span>"). Note that most of the settings typically do not need to be changed from their default values, at least for exploratory runs. We will only experiment with some of the interesting settings in this demo, but detailed discussions of all settings can be found on the <a href="https://molevol.mbl.edu/index.php/Garli_wiki" target="_new">support web site</a>.</p>
+GARLI reads all of its settings from a configuration file.  By default it looks for a file named <span class="file">garli.conf</span>, but other configuration files can be specified as a command line argument after the executable (e.g., if the executable were named <span class="file">garli</span>, you would type "<span class="command">garli myconfig.conf</span>"). Note that most of the settings typically do not need to be changed from their default values, at least for exploratory runs. We will only experiment with some of the interesting settings in this demo, but detailed discussions of all settings can be found on the <a href="https://github.com/zwickl/garli/wiki" target="_new">support web site</a>.</p>
 
 <p>
 The config file is divided into two parts: <span class="config">[general]</span> and <span class="config">[master]</span>. The <span class="config">[general]</span> section specifies settings such as the data set to be read, starting conditions, model settings, and output files. To start running a new data set, the only setting that <i>must</i> be specified is the <span class="config">datafname</span>, which specifies the file containing the data matrix in Nexus, PHYLIP, or FASTA format. The <span class="config">[master]</span> section specifies settings that control the functioning of the genetic algorithm itself, and typically the default settings can be used. Basic template configuration files are included with any download of the program. </p>
