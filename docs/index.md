@@ -56,9 +56,11 @@ Super cool widgets developed by Mark Holder:
 
 
 Feb 21, 2024  
-Maximum likelihood tree search  and models
-[Dire Wolf discussion paper](https://www.nature.com/articles/s41586-020-03082-x)
-Lab: ML search  
+[Models](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Models2.pdf)  
+[Dire Wolf discussion paper](https://www.nature.com/articles/s41586-020-03082-x)  
+[Maximum likelihood tree search](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/ML_search.pdf)  
+[Lab: ML search](https://mctavishlab.github.io/GradPhylo/MLsearchLab.html)  
+
 
 Feb 28, 2024  
 Intro To Bayes  
