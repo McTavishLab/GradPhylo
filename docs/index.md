@@ -62,21 +62,12 @@ Feb 21, 2024
 [Lab: ML search](https://mctavishlab.github.io/GradPhylo/MLsearchLab.html)  
 
 
-Feb 28, 2024  
-Intro To Bayes  
-Paper discussion: 
-
-March 6, 2024  
-Bayesian Phylogenetics  
-Paper discussion: 
- 
 March 13, 2024  
-Applied Bayesian Phylogenetics  
-Paper discussion: 
+Paper discussions
 
 
 March 20, 2024  
-Data set assembly and alignment  
+[Bayes Intro + Monte Hall](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/BayesIntro_2024.pdf) 
 Paper discussion: 
 
 
