@@ -72,8 +72,8 @@ Paper discussion:
 
 
 April 3, 2022  
-Dating phylogenies  
-Paper discussion: 
+More Bayes   
+[MrBayes lab from Paul Lewis](https://plewis.github.io/mrbayes/)
 
 
 April 10, 2024  
