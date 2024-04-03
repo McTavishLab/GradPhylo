@@ -72,8 +72,9 @@ Paper discussion:
 
 
 April 3, 2022  
-More Bayes  
+More Bayes - exercises from Paul Lewis   
 [MCMC Robot](https://plewis.github.io/applets/mcmc-robot/)  
+[MCMC example](https://plewis.github.io/hwmcmc/)
 [MrBayes lab from Paul Lewis](https://plewis.github.io/mrbayes/)
 
 
