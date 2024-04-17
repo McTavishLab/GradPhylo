@@ -83,8 +83,8 @@ April 10, 2024
 
 April 17, 2024  
 [Data choices](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/DataSets.pdf)  
-
-
+[Paper: Phylogenetic tree building in the genomic age](https://www.nature.com/articles/s41576-020-0233-0)  
+[Paper: Unforeseen Consequences of Excluding Missing Data from Next-Generation Sequences](https://academic.oup.com/sysbio/article/65/3/357/2468879)  
 
 
 April 24, 2024  
