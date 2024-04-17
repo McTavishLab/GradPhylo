@@ -75,21 +75,15 @@ April 3, 2022
 More Bayes - exercises from Paul Lewis   
 [MCMC Robot](https://plewis.github.io/applets/mcmc-robot/)  
 [MCMC example](https://plewis.github.io/hwmcmc/)
-[MrBayes lab from Paul Lewis](https://plewis.github.io/mrbayes/)
 
 
 April 10, 2024  
-Species Trees  
-Optional tutorials:    
-[Astral](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md})  
-[SVD quartets](http://www.phylosolutions.com/tutorials/ssb2018/svdquartets-tutorial.html)  
-[Beast2](https://taming-the-beast.org/tutorials/StarBeast-Tutorial/)  
-[StarBeast2](https://taming-the-beast.org/tutorials/species-tree-clocks/)  
-Paper discussion: 
+[MrBayes lab from Paul Lewis](https://plewis.github.io/mrbayes/)   
+
 
 April 17, 2024  
-Vernal pools walk +
-Paper discussion
+[Open Tree of Life and GBIF](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/DataSets.pdf)  
+
 
 
 
