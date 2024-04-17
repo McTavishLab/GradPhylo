@@ -89,6 +89,7 @@ April 17, 2024
 
 April 24, 2024  
 [Open Tree of Life and GBIF](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/OT_intro_GBIF_demo.pdf)  
+Comparative analysis  
 [Demo link](https://github.com/McTavishLab/jupyter_OpenTree_tutorials)    
 [Merced Vernal Pools and Grassland Reserve](https://ucnrs.org/reserves/merced-vernal-pools-and-grassland-reserve/)  
 
