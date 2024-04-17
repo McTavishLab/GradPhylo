@@ -82,7 +82,7 @@ April 10, 2024
 
 
 April 17, 2024  
-[Open Tree of Life and GBIF](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/DataSets.pdf)  
+[Data choices](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/DataSets.pdf)  
 
 
 
