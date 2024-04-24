@@ -88,15 +88,15 @@ April 17, 2024
 
 
 April 24, 2024  
-[Open Tree of Life and GBIF](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/OT_intro_GBIF_demo.pdf)  
-Comparative analysis  
-[Demo link](https://github.com/McTavishLab/jupyter_OpenTree_tutorials)    
-[Merced Vernal Pools and Grassland Reserve](https://ucnrs.org/reserves/merced-vernal-pools-and-grassland-reserve/)  
+[Open Tree of Life and GBIF](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/OpenTree_summary.pdf)  
+[OpenTree Demo link](https://github.com/McTavishLab/jupyter_OpenTree_tutorials)    
+Comparative analysis guest presentation - Ronnie Hall  
+[Suggested tutorials comparative analysis tutorials from Ricardo Betancur, Luke Harmon, & Liam Revell](http://www.phytools.org/Cordoba2017/)
+[Paper:](https://www.sciencedirect.com/science/article/pii/S105579032200197X)    
 
 
 May 1, 2024 
-TBD  
-Paper discussion: 
+Divergence time estimation   
 
 
 
