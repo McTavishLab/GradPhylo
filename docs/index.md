@@ -88,7 +88,7 @@ April 17, 2024
 
 
 April 24, 2024  
-[Open Tree of Life and GBIF](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/OpenTree_summary.pdf)  
+[Open Tree of Life](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/OpenTree_summary.pdf)  
 [OpenTree Demo link](https://github.com/McTavishLab/jupyter_OpenTree_tutorials)    
 Comparative analysis guest presentation - Ronnie Hall  
 [Comparative anaysis text - Luke Harmon](https://lukejharmon.github.io/pcm/chapter5_mvbm/)  
@@ -97,7 +97,8 @@ Comparative analysis guest presentation - Ronnie Hall
 
 
 May 1, 2024 
-Divergence time estimation   
+[Divergence time estimation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Dates.pdf)
+[Gene Tree Species Trees](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/GeneTreeSppTree.pdf)
 
 
 
