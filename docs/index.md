@@ -98,7 +98,7 @@ Comparative analysis guest presentation - Ronnie Hall
 
 May 1, 2024 
 [Divergence time estimation](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Dates.pdf)
-[Gene Tree Species Trees](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/GeneTreeSppTree.pdf)
+[Gene Tree Species Trees](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/Discordance_extended.pdf)
 
 
 
