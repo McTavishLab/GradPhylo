@@ -58,5 +58,20 @@ October 1, 2026,
 [Shultz et al. Ancient gene linkages support ctenophores as sister to other animals](https://www.nature.com/articles/s41586-023-05936-6)
 
 
+
+October 1, 2026,  
+[Shultz et al. Ancient gene linkages support ctenophores as sister to other animals](https://www.nature.com/articles/s41586-023-05936-6)
+
+
+October 6, 2026,  
+[ML_search](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/ML_search.pdf)  
+[IQ-Tree tutorial](https://iqtree.github.io/doc/Tutorial)  
+
+
+October 8, 2026,  
+[Steenwyk and King, Integrative phylogenomics positions sponges at the root of the animal tree.](https://www.science.org/doi/10.1126/science.adw9456)  
+[Dunn et al. 2025](https://github.com/caseywdunn/sk25)  
+[Keep calm and be transparent: advice from scientists who retracted their papers](https://www.nature.com/articles/d41586-026-00763-x)  
+
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
