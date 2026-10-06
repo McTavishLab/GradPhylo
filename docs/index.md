@@ -57,12 +57,6 @@ September 29, 2026,
 October 1, 2026,  
 [Shultz et al. Ancient gene linkages support ctenophores as sister to other animals](https://www.nature.com/articles/s41586-023-05936-6)
 
-
-
-October 1, 2026,  
-[Shultz et al. Ancient gene linkages support ctenophores as sister to other animals](https://www.nature.com/articles/s41586-023-05936-6)
-
-
 October 6, 2026,  
 [ML_search](https://github.com/McTavishLab/GradPhylo/blob/master/docs/slides/ML_search.pdf)  
 [IQ-Tree tutorial](https://iqtree.github.io/doc/Tutorial)  
